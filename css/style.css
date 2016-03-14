@@ -1,6 +1,9 @@
 @media screen and (min-width: 320px) {
+    body {
+        border: 10px solid #fff;
+    }
     .container > p {
-        font-size: 1.8em;
+        font-size: 2em;
     }
     .container a {
         display: block;
@@ -11,9 +14,12 @@
         border: none;
     }
 }
-@media screen and (min-width: 410px) {
+@media screen and (min-width: 360px) {
+    body {
+        border: 15px solid #fff;
+    }
     .container > p {
-        font-size: 2.4em;
+        font-size: 2.2em;
     }
     .container a {
         display: inline-block;
@@ -21,6 +27,12 @@
     }
 }
 @media screen and (min-width: 768px) {
+    body {
+        border: 25px solid #fff;
+    }
+    .container {
+        width: 705px;
+    }
     .container > p {
         font-size: 3em;
         color: #004352;
@@ -35,7 +47,6 @@ html, body {
     height: 100%;
     width: 100%;
     background: #EDF0F0;
-    border: 15px solid #fff;
     text-align: center;
 }
 .container {
