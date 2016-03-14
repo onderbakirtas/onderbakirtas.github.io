@@ -1,0 +1,16 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background: #EDF0F0;
+}
+.container {
+    position: relative;
+    top: 40%;
+    text-align: center;
+}
+.container > p {
+    font-family: "Fonarto", sans-serif;
+    font-size: 3em;
+    color: #1D3D40;
+    text-shadow: 1px 1px 0 #FCFCFC;
+}
