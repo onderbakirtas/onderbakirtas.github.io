@@ -7,21 +7,38 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Bungee&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/reset.css">
-    <script src="js/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $(".title-box").hide(0).delay(500).fadeIn(400);
-        });
-    </script>
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
     <div class="main">
-        <div class="title-box">
+        <div id="div1" class="title-box">
             <h1>Beyin</h1>
             <h3>Egzersizleri</h3>
         </div>
     </div>
+
+    <script>
+        var el = document.getElementById("div1");
+
+        function fadeIn(el) {
+            el.style.opacity = 0;
+
+
+            var tick = function() {
+                el.style.opacity = +el.style.opacity + 0.01;
+
+
+                if (el.style.opacity < 1) {
+                    (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16)
+                }
+            };
+
+            tick();
+        }
+
+        fadeIn(el);
+    </script>
 </body>
 
 </html>
