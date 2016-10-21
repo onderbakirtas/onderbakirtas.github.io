@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    width: 450px;
+    height: 800px;
+    margin: auto;
+    background: url('../img/bg1.png'), rgba(79, 41, 88, 0.05);
+    background-position: top left;
+}
+
+.title-box {
+    text-align: center;
+    color: #FFFBB7;
+    text-shadow: 0 0 0 1px rgba(79, 41, 88, 0.95);
+    font-family: 'Bungee', sans-serif;
+    min-height: 10%;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    background: #66B6AB;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.title-box>h1 {
+    margin: auto;
+    align-items: center;
+    font-size: 2rem;
+}
