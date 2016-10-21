@@ -12,6 +12,13 @@ html {
 body {
     font-size: 1.6rem;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .main {
@@ -27,15 +34,23 @@ body {
     color: #66B6AB;
     text-shadow: 0 0 0 1px rgba(79, 41, 88, 0.95);
     font-family: 'Bungee', sans-serif;
-    min-height: 10%;
-    padding-top: 5%;
+    min-height: 100%;
     display: flex;
+    flex-direction: column;
     text-transform: uppercase;
     justify-content: center;
 }
 
 .title-box>h1 {
-    margin: auto;
-    align-items: center;
-    font-size: 1.4rem;
+    color: #66B6AB;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 3.58rem;
+}
+
+.title-box>h3 {
+    color: #5B7C8D;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 1.5rem;
 }
