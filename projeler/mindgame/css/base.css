@@ -39,7 +39,7 @@ body {
     text-transform: uppercase;
     justify-content: center;
     opacity: 0;
-    transition: transform 1.2s ease-in-out, opacity 0.9 ease-in-out;
+    transition: transform 1.2s ease-in-out, opacity 0.9s ease-in-out;
 }
 
 .title-box>h1 {
