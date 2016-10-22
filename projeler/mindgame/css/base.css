@@ -38,6 +38,8 @@ body {
     flex-direction: column;
     text-transform: uppercase;
     justify-content: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
 .title-box>h1 {
@@ -52,4 +54,8 @@ body {
     margin: 0 auto;
     width: 100%;
     font-size: 1.5rem;
+}
+
+.show {
+    opacity: 1;
 }
