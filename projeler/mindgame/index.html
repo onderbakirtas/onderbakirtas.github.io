@@ -19,12 +19,19 @@
     </div>
     <script>
         var el = document.getElementById("div1");
-        el.style.opacity = 0;
-        setInterval(function() {
-            do {
-                el.style.opacity = parseFloat(el.style.opacity) + 0.01;
-            } while (el.style.opacity == 1)
-        }, 1);
+
+        function fadeIn(el) {
+            el.style.opacity = 0;
+
+            (function fade() {
+                var val = parseFloat(el.style.opacity);
+                if (!((val += .02) > 1)) {
+                    el.style.opacity = val;
+                    requestAnimationFrame(fade);
+                }
+            })();
+        }
+        fadeIn(el);
     </script>
 
 </body>
