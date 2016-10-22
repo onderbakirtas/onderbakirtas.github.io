@@ -39,7 +39,7 @@ body {
     text-transform: uppercase;
     justify-content: center;
     opacity: 0;
-    transition: transform 0.9s ease-in-out, opacity 1s ease-in-out;
+    transition: transform 1.2s ease-in-out, opacity 1s ease-in-out;
 }
 
 .title-box>h1 {
@@ -58,5 +58,5 @@ body {
 
 .show {
     opacity: 1;
-    transform: translateY(27px);
+    transform: translateY(24px);
 }
