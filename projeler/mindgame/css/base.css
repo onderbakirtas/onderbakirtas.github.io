@@ -32,7 +32,6 @@ body {
 .title-box {
     text-align: center;
     color: #66B6AB;
-    text-shadow: 0 0 0 1px rgba(79, 41, 88, 0.95);
     font-family: 'Bungee', sans-serif;
     min-height: 90%;
     display: flex;
@@ -53,12 +52,4 @@ body {
     margin: 0 auto;
     width: 100%;
     font-size: 1.5rem;
-}
-
-.hide {
-    opacity: 0;
-}
-
-.show {
-    transition: opacity 400ms;
 }

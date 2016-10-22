@@ -17,28 +17,16 @@
             <h3>Egzersizleri</h3>
         </div>
     </div>
-
     <script>
         var el = document.getElementById("div1");
-
-        function fadeIn(el) {
-            el.style.opacity = 0;
-
-
-            var tick = function() {
-                el.style.opacity = +el.style.opacity + 0.01;
-
-
-                if (el.style.opacity < 1) {
-                    (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 1)
-                }
-            };
-
-            tick();
-        }
-
-        fadeIn(el);
+        el.style.opacity = 0;
+        setInterval(function() {
+            do {
+                el.style.opacity = parseFloat(el.style.opacity) + 0.01;
+            } while (el.style.opacity == 1)
+        }, 10);
     </script>
+
 </body>
 
 </html>
