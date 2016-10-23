@@ -95,7 +95,6 @@ body {
     0% {
         filter: blur(3px);
         -webkit-filter: blur(3px);
-        letter-spacing: 16px;
         opacity: 0;
     }
     40% {
@@ -104,7 +103,6 @@ body {
     100% {
         filter: blur(0);
         -webkit-filter: blur(0);
-        letter-spacing: 0;
     }
 }
 
