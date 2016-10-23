@@ -153,7 +153,7 @@ body {
     padding: 0 1.6rem;
     text-transform: lowercase;
     font-size: 0;
-    animation: vis 1.8s ease-in-out, fadeIn 1.2s ease-in-out 1.8s;
+    animation: vis 1.8s ease, fadeIn 1.2s ease 1.8s;
 }
 
 .ltr {
@@ -163,19 +163,19 @@ body {
 }
 
 .ltr.g {
-    animation: vis 1.8s ease-in-out, letterSpace_g 1.2s ease-in-out 1.8s;
+    animation: vis 1.8s ease, letterSpace_g 1.2s ease 1.8s;
 }
 
 .ltr.a {
-    animation: vis 1.8s ease-in-out, letterSpace_a 1.2s ease-in-out 1.8s;
+    animation: vis 1.8s ease, letterSpace_a 1.2s ease 1.8s;
 }
 
 .ltr.e {
-    animation: vis 1.8s ease-in-out, letterSpace_e 1.2s ease-in-out 1.8s;
+    animation: vis 1.8s ease, letterSpace_e 1.2s ease 1.8s;
 }
 
 .ltr.s {
-    animation: vis 1.8s ease-in-out, letterSpace_s 1.2s ease-in-out 1.8s;
+    animation: vis 1.8s ease, letterSpace_s 1.2s ease 1.8s;
 }
 
 @-webkit-keyframes bringin {
@@ -194,7 +194,7 @@ body {
     margin: 0 10%;
     padding: 0 0 8px;
     height: 43px;
-    animation: vis .5s ease-in-out, bringin 1s ease-in-out .5s;
+    animation: vis .5s ease, bringin 1s ease .5s;
     z-index: 0;
 }
 
@@ -221,7 +221,7 @@ body {
     text-transform: uppercase;
     justify-content: center;
     opacity: 0;
-    transition: transform 1.2s ease-in-out, opacity 1s ease-in-out;
+    transition: transform 1.2s ease, opacity 1s ease;
 }
 
 .title-box>h1 {
