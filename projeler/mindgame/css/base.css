@@ -36,10 +36,10 @@ body {
     height: 640px;
     display: table;
     text-align: center;
-    color: #556270;
+    color: #848E98;
     margin: 0;
     padding: 0;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Alegreya Sans SC', sans-serif;
     font-weight: 300;
 }
 
@@ -48,11 +48,21 @@ body {
     vertical-align: middle;
     width: 100%;
     height: auto;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+}
+
+.imgbox>h2 {
+    width: 80%;
+    margin: 2% 10%;
+    text-align: center;
+    border-bottom: 1px solid #848E98;
+    line-height: 0.1em;
 }
 
 .imgbox .txt {
-    width: 100%;
+    background: #fbfbfb;
+    padding: 0 12px;
+    text-transform: lowercase;
 }
 
 .logo {
