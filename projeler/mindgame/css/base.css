@@ -32,12 +32,36 @@ img {
 
 .main {
     background: #fbfbfb;
-    width: 450px;
-    height: 800px;
+    width: 360px;
+    height: 640px;
     margin: auto;
     background-size: 57.2%;
     background-position: 9px 0px;
     overflow: hidden;
+}
+
+@media only screen and (min-width: 375px) {
+    .main {
+        background: #fbfbfb;
+        width: 375px;
+        height: 667px;
+        margin: auto;
+        background-size: 57.2%;
+        background-position: 9px 0px;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (min-width: 414px) {
+    .main {
+        background: #fbfbfb;
+        width: 414px;
+        height: 736px;
+        margin: auto;
+        background-size: 57.2%;
+        background-position: 9px 0px;
+        overflow: hidden;
+    }
 }
 
 @-webkit-keyframes fadeOut {
