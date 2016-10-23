@@ -22,12 +22,23 @@ body {
 }
 
 .main {
+    background: #222;
     width: 360px;
     height: 640px;
     margin: auto;
-    background: #fbfbfb;
     background-size: 57.2%;
     background-position: 9px 0px;
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
 }
 
 #loader {
