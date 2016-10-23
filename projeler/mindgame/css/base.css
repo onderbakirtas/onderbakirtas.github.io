@@ -68,17 +68,27 @@ body {
     text-align: center;
     border-bottom: 1px solid #DDDFE2;
     line-height: 0.1rem;
-    animation: narrow 2s ease-in-out;
 }
 
 @-webkit-keyframes blur {
     0% {
         filter: blur(3px);
         -webkit-filter: blur(3px);
+        letter-spacing: 9px;
     }
     100% {
         filter: blur(0);
         -webkit-filter: blur(0);
+        letter-spacing: 0;
+    }
+}
+
+@-webkit-keyframes vis {
+    0% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
     }
 }
 
@@ -86,13 +96,27 @@ body {
     background: #fbfbfb;
     padding: 0 2rem;
     text-transform: lowercase;
-    animation: blur 2s ease-in-out;
+    animation: vis 0.1s ease-in-out 3s, blur 2s ease-in-out;
+}
+
+@-webkit-keyframes bringin {
+    0% {
+        opacity: 0;
+        transform: scale(0.9, 0.9);
+        transform: translateY(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+        transform: translateY(0);
+    }
 }
 
 .logo {
     width: 80%;
     margin: 3% 10%;
     height: auto;
+    animation: bringin 2s ease-in-out;
 }
 
 .blur {
