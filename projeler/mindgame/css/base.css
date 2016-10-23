@@ -63,18 +63,27 @@ body {
 }
 
 .imgbox>h2 {
-    width: 80%;
-    margin: 2% 10%;
+    width: 86%;
+    margin: 0 8%;
+    display: flex;
+    justify-content: center;
+    background: #fbfbfb;
     text-align: center;
-    border-bottom: 1px solid #DDDFE2;
-    line-height: 0.1rem;
+    height: 46px;
+    border-top: 1px solid #DDDFE2;
+    z-index: 10;
+    position: relative;
 }
 
 @-webkit-keyframes blur {
     0% {
         filter: blur(3px);
         -webkit-filter: blur(3px);
-        letter-spacing: 9px;
+        letter-spacing: 16px;
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
     }
     100% {
         filter: blur(0);
@@ -85,25 +94,28 @@ body {
 
 @-webkit-keyframes vis {
     0% {
-        visibility: hidden;
+        opacity: 1;
+    }
+    1% {
+        opacity: 0;
     }
     100% {
-        visibility: visible;
+        opacity: 0;
     }
 }
 
 .imgbox .txt {
     background: #fbfbfb;
-    padding: 0 2rem;
+    padding: 0 1.6rem;
     text-transform: lowercase;
-    animation: vis 0.1s ease-in-out 3s, blur 2s ease-in-out;
+    animation: vis 1.8s ease-in-out, blur 1.2s ease-in-out 1.8s;
 }
 
 @-webkit-keyframes bringin {
     0% {
-        opacity: 0;
+        opacity: 0.9;
         transform: scale(0.9, 0.9);
-        transform: translateY(-80px);
+        transform: translateY(39px);
     }
     100% {
         opacity: 1;
@@ -114,9 +126,10 @@ body {
 
 .logo {
     width: 80%;
-    margin: 3% 10%;
+    margin: 0 10%;
     height: auto;
-    animation: bringin 2s ease-in-out;
+    animation: vis 1s ease-in-out, bringin 1.6s ease-in-out 1s;
+    z-index: 0;
 }
 
 .blur {
