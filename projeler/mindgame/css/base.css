@@ -122,7 +122,12 @@ body {
     background: #fbfbfb;
     padding: 0 1.6rem;
     text-transform: lowercase;
+    font-size: 0;
     animation: vis 1.8s ease-in-out, blur 1.2s ease-in-out 1.8s;
+}
+
+.ltr {
+    font-size: 2rem;
 }
 
 @-webkit-keyframes bringin {
