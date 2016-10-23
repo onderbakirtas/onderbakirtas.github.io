@@ -36,7 +36,7 @@ body {
     height: 640px;
     display: table;
     text-align: center;
-    color: #848E98;
+    color: #6D7884;
     margin: 0;
     padding: 0;
     font-family: 'Alegreya Sans SC', sans-serif;
@@ -55,8 +55,8 @@ body {
     width: 80%;
     margin: 2% 10%;
     text-align: center;
-    border-bottom: 1px solid #848E98;
-    line-height: 0.1em;
+    border-bottom: 1px solid #CCCFD3;
+    line-height: 0.1rem;
 }
 
 .imgbox .txt {
