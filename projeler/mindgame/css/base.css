@@ -25,16 +25,18 @@ body {
     width: 360px;
     height: 640px;
     margin: auto;
-    background: url('../img/bg1.png'), rgba(79, 41, 88, 0.05);
+    background: #fbfbfb;
     background-size: 57.2%;
     background-position: 9px 0px;
 }
 
 #loader {
     background: #fbfbfb;
-    width: 360px;
-    height: 640px;
-    display: table;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     color: #6D7884;
     margin: 0;
@@ -44,10 +46,12 @@ body {
 }
 
 #loader .imgbox {
-    display: table-cell;
-    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
-    height: auto;
+    height: 96px;
     font-size: 2rem;
 }
 
@@ -64,12 +68,13 @@ body {
 
 .imgbox>h2 {
     width: 86%;
-    margin: 0 8%;
+    margin: 0 7%;
     display: flex;
     justify-content: center;
+    align-self: center;
     background: #fbfbfb;
     text-align: center;
-    height: 46px;
+    height: 53px;
     border-top: 1px solid #DDDFE2;
     z-index: 10;
     position: relative;
@@ -108,18 +113,16 @@ body {
     background: #fbfbfb;
     padding: 0 1.6rem;
     text-transform: lowercase;
-    animation: vis 1.8s ease-in-out, blur 1.2s ease-in-out 1.8s;
+    animation: vis 3.8s ease-in-out, blur 1.2s ease-in-out 3.8s;
 }
 
 @-webkit-keyframes bringin {
     0% {
-        opacity: 0.9;
-        transform: scale(0.9, 0.9);
-        transform: translateY(39px);
+        opacity: 0.7;
+        transform: translateY(43px);
     }
     100% {
         opacity: 1;
-        transform: scale(1, 1);
         transform: translateY(0);
     }
 }
@@ -127,8 +130,9 @@ body {
 .logo {
     width: 80%;
     margin: 0 10%;
-    height: 35px;
-    animation: vis 1s ease-in-out, bringin 1.6s ease-in-out 1s;
+    padding: 0 0 8px;
+    height: 43px;
+    animation: vis 1.5s ease-in-out, bringin 1.6s ease-in-out 1.5s;
     z-index: 0;
 }
 
