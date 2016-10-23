@@ -1,4 +1,4 @@
 setTimeout(function() {
-    var el = document.getElementById("wrapper");
-    el.classList.add("show");
+    var el = document.getElementById("ttl");
+    el.classList.add("blur");
 }, 1000);

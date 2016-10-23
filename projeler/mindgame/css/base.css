@@ -59,16 +59,33 @@ body {
     line-height: 0.1rem;
 }
 
+@-webkit-keyframes blur {
+    0% {
+        filter: blur(3px);
+        -webkit-filter: blur(3px);
+    }
+    100% {
+        filter: blur(0);
+        -webkit-filter: blur(0);
+    }
+}
+
 .imgbox .txt {
     background: #fbfbfb;
     padding: 0 2rem;
     text-transform: lowercase;
+    animation: blur 2s ease-in-out 0.1s;
 }
 
 .logo {
     width: 80%;
     margin: 3% 10%;
     height: auto;
+}
+
+.blur {
+    filter: blur(0);
+    -webkit-filter: blur(0);
 }
 
 
