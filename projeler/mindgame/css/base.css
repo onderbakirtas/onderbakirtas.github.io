@@ -113,7 +113,7 @@ body {
     background: #fbfbfb;
     padding: 0 1.6rem;
     text-transform: lowercase;
-    animation: vis 3.8s ease-in-out, blur 1.2s ease-in-out 3.8s;
+    animation: vis 1.8s ease-in-out, blur 1.2s ease-in-out 1.8s;
 }
 
 @-webkit-keyframes bringin {
@@ -132,7 +132,7 @@ body {
     margin: 0 10%;
     padding: 0 0 8px;
     height: 43px;
-    animation: vis 1.5s ease-in-out, bringin 1.6s ease-in-out 1.5s;
+    animation: vis .5s ease-in-out, bringin 1s ease-in-out .5s;
     z-index: 0;
 }
 
