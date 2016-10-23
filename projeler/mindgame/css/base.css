@@ -134,7 +134,7 @@ img {
     transform: translateX(-100%);
     font-family: 'Alegreya Sans SC', sans-serif;
     font-weight: 300;
-    animation: staticX 4s linear, pageInLoader 0.6s linear 4s;
+    animation: staticX 4s linear, pageInLoader 0.3s linear 4s;
 }
 
 #loader .imgbox {
@@ -333,7 +333,7 @@ img {
     position: relative;
     z-index: 13;
     transform: translateY(-100%);
-    animation: staticXY 4s linear, pageInHome 0.6s linear 4s;
+    animation: staticXY 4s linear, pageInHome 0.3s linear 4s;
 }
 
 .title-box {
