@@ -34,30 +34,40 @@ body {
     background: #fbfbfb;
     width: 360px;
     height: 640px;
-    display: block;
+    display: table;
     text-align: center;
     color: #556270;
     margin: 0;
     padding: 0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
 }
 
 #loader .imgbox {
-    width: 360px;
-    height: 55px;
-    position: absolute;
-    bottom: 15px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+    font-size: 1.3rem;
+}
+
+.imgbox .txt {
+    width: 100%;
 }
 
 .logo {
-    width: 45px;
-    height: 45px;
+    width: 80%;
+    margin: 3% 10%;
+    height: auto;
 }
 
+
+/*
 #loader>h2 {
     font-family: 'Rubik', sans-serif;
     font-weight: 300;
     font-size: 1.4rem;
-}
+}*/
 
 .title-box {
     text-align: center;
