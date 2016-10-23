@@ -157,8 +157,9 @@ body {
 }
 
 .ltr {
-    font-size: 2rem;
+    font-size: 1.8rem;
     background: transparent;
+    margin: 0 0.25rem;
 }
 
 .ltr.g {
