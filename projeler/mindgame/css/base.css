@@ -127,7 +127,7 @@ body {
 .logo {
     width: 80%;
     margin: 0 10%;
-    height: auto;
+    height: 35px;
     animation: vis 1s ease-in-out, bringin 1.6s ease-in-out 1s;
     z-index: 0;
 }
