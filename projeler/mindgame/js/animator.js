@@ -1,4 +1,4 @@
 setTimeout(function() {
-    var el = document.getElementById("ttl");
-    el.classList.add("blur");
-}, 1000);
+    var el = document.getElementById("tal");
+    el.classList.add("narrow");
+}, 1);
