@@ -274,7 +274,7 @@ img {
     width: 80%;
     margin: 0 10%;
     padding: 0 0 8px;
-    height: 47px;
+    height: auto;
     animation: vis .5s ease, bringin 1s ease .5s;
     z-index: 0;
     pointer-events: none;
