@@ -328,7 +328,7 @@ img {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background: url("../img/bg5.png") top left repeat rgba(168, 212, 111, 0.15);
+    background: url("../img/bg5.png") top left repeat rgba(255, 247, 254, 0.15);
     background-size: 70%;
     position: relative;
     z-index: 13;
@@ -348,19 +348,19 @@ img {
 }
 
 .title-box>h1 {
-    color: #359668;
+    color: #FFCA80;
     margin: 0 auto;
     width: 100%;
     font-size: 4.55rem;
-    text-shadow: 1px 1px 0 rgba(43, 123, 85, 1);
+    text-shadow: 0.02rem 0.02rem 0 rgba(239, 191, 125, 1), -0.02rem 0.02rem 0 rgba(239, 191, 125, 1), 0.02rem -0.02rem 0 rgba(239, 191, 125, 1), -0.02rem -0.02rem 0 rgba(239, 191, 125, 1);
 }
 
 .title-box>h3 {
-    color: #341139;
+    color: #F3847A;
     margin: 0 auto;
     width: 100%;
     font-size: 1.9rem;
-    text-shadow: 1px 1px 0 rgba(43, 14, 47, 1);
+    text-shadow: 0.02rem 0.02rem 0 rgba(228, 127, 120, 1), -0.02rem 0.02rem 0 rgba(228, 127, 120, 1), 0.02rem -0.02rem 0 rgba(228, 127, 120, 1), -0.02rem -0.02rem 0 rgba(228, 127, 120, 1);
 }
 
 .menu-box {
@@ -383,8 +383,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(60, 50, 81, 1);
-    color: #FFED90;
-    font-size: 1.2rem;
+    background: #4D505F;
+    color: #FFCA80;
+    font-size: 1.4rem;
     letter-spacing: 1px;
 }
