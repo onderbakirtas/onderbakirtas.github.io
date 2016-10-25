@@ -380,7 +380,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(83, 69, 122, 0.9);
+    background: rgba(83, 69, 122, 0.95);
     color: #FFEDAD;
     font-size: 1.4rem;
     letter-spacing: 1px;
