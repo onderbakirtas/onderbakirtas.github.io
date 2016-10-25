@@ -1,0 +1,98 @@
+/* 
+     * MobiCSS v0.01
+     * Author: Önder BAKIRTAŞ
+     * http://onderbakirtas.com/mobicss
+     * Licensed under MIT License
+     * 10/25/2016
+*/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a[href],
+button {
+    touch-action: manipulation;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 360px;
+    height: 640px;
+    margin: 0 auto;
+}
+
+main {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #FFF7FE;
+    overflow: hidden;
+    position: relative;
+}
+
+.card {
+    display: block;
+    width: 60%;
+    height: 60%;
+    color: #FFF7FE;
+    float: left;
+}
+
+.card.card-current {
+    background: #4F4D65;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: 3;
+}
+
+.card.card-previous {
+    background: #97EAB2;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    z-index: 1;
+    transform: scale(0.75, 0.75) matrix3d(1, 0, 0.00, 0.001, 0.00, 1, 0.00, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+}
+
+.card.card-next {
+    background: #F75880;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    z-index: 2;
+    transform: scale(0.75, 0.75) matrix3d(1, 0, 0.00, -0.001, 0.00, 1, 0.00, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+}
+
+
+/*@media only screen and (min-width: 375px) {
+    body {
+        width: 375px;
+        height: 667px;
+    }
+}
+
+@media only screen and (min-width: 414px) {
+    body {
+        width: 414px;
+        height: 640px;
+    }
+}*/
