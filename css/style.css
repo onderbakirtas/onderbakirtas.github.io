@@ -2,7 +2,7 @@
     body {
         border: 10px solid #fff;
     }
-    .container > p {
+    .container>p {
         font-size: 2em;
     }
     .container a {
@@ -14,11 +14,12 @@
         border: none;
     }
 }
+
 @media screen and (min-width: 360px) {
     body {
         border: 15px solid #fff;
     }
-    .container > p {
+    .container>p {
         font-size: 2.2em;
     }
     .container a {
@@ -26,6 +27,7 @@
         margin: 0 0.5em;
     }
 }
+
 @media screen and (min-width: 768px) {
     body {
         border: 25px solid #fff;
@@ -33,7 +35,7 @@
     .container {
         width: 705px;
     }
-    .container > p {
+    .container>p {
         font-size: 3em;
         color: #004352;
     }
@@ -43,12 +45,19 @@
         box-shadow: 0 1px 0 #FCFCFC;
     }
 }
-html, body {
+
+html,
+body {
     height: 100%;
     width: 100%;
+    -moz-osx-font-smoothing: grayscale;
     background: #EDF0F0;
     text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
 }
+
 .dis {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -58,14 +67,16 @@ html, body {
     user-select: none;
     cursor: default;
 }
+
 .container {
     position: relative;
     top: 40%;
 }
-.container > p {
+
+.container>p {
     font-family: "Fonarto", sans-serif;
-    text-shadow: 1px 1px 0 #FCFCFC;
 }
+
 .container a {
     color: #1D3D40;
     font-size: 1.2em;
