@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css?family=Asap:400,500,700|Source+Sans+Pro:600|Titillium+Web:300,600");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  font-size: 10px;
+  font-size: 62.5%;
+  line-height: 1rem;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    background: url("../img/pattern.png"), url("../img/bg.jpg");
+    background-repeat: repeat, no-repeat;
+    font-family: 'Asap', sans-serif;
+    max-height: 728px;
+    width: 100%;
+  }
+
+  .land {
+    height: 40vh;
+    min-height: 248px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .land h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 72px;
+    letter-spacing: 12px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 24px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+  }
+
+  .main {
+    width: 1060px;
+    height: 360px;
+    margin: 80px auto auto;
+    display: block;
+  }
+  .main .landBox {
+    display: inline-block;
+    width: 240px;
+    height: 135px;
+    margin-right: 20px;
+    font-size: 1.8rem;
+    line-height: 13.5rem;
+    position: relative;
+    color: #fff;
+    float: left;
+    text-align: center;
+    transition: 0.2s;
+  }
+  .main .landBox .landingLink {
+    display: block;
+    opacity: 0.65;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.2s;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transform: translateY(0);
+  }
+  .main .landBox .landingLink:hover {
+    transform: translateY(-24px);
+    opacity: 1;
+    color: #F06048;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  }
+  .main .landingMain {
+    background: url("../img/haberler.jpg") no-repeat;
+  }
+  .main .landingEvent {
+    background: url("../img/etkinlik.jpg") no-repeat;
+  }
+  .main .landingBlog {
+    background: url("../img/blog.jpg") no-repeat;
+  }
+  .main .landingForum {
+    background: url("../img/forum.jpg") no-repeat;
+  }
+  .main .landingMain, .main .landingEvent, .main .landingBlog, .main .landingForum {
+    background-size: 240px 135px;
+  }
+
+  .landBox {
+    width: 240px;
+    height: 135px;
+  }
+}
+@media only screen and (min-width: 1380px) {
+  .wrapper {
+    background: url("../img/pattern.png"), url("../img/bg.jpg");
+    background-repeat: repeat, no-repeat;
+    font-family: 'Asap', sans-serif;
+    max-height: 1028px;
+    width: 100%;
+  }
+
+  .land {
+    height: 40vh;
+    min-height: 388px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .land h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 72px;
+    letter-spacing: 12px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 24px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+  }
+
+  .main {
+    width: 1340px;
+    height: 60vh;
+    margin: auto;
+    display: block;
+  }
+  .main .landBox {
+    display: inline-block;
+    width: 320px;
+    height: 180px;
+    margin-right: 20px;
+    font-size: 2.4rem;
+    line-height: 18rem;
+    position: relative;
+    color: #fff;
+    float: left;
+    text-align: center;
+    transition: 0.2s;
+  }
+  .main .landBox .landingLink {
+    display: block;
+    opacity: 0.65;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.2s;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transform: translateY(0);
+  }
+  .main .landBox .landingLink:hover {
+    transform: translateY(-24px);
+    opacity: 1;
+    color: #F06048;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  }
+  .main .landBox .landingMain {
+    background: url("../img/haberler.jpg") no-repeat;
+  }
+  .main .landBox .landingEvent {
+    background: url("../img/etkinlik.jpg") no-repeat;
+  }
+  .main .landBox .landingBlog {
+    background: url("../img/blog.jpg") no-repeat;
+  }
+  .main .landBox .landingForum {
+    background: url("../img/forum.jpg") no-repeat;
+  }
+  .main .landBox .landingMain, .main .landBox .landingEvent, .main .landBox .landingBlog, .main .landBox .landingForum {
+    background-size: 320px 180px;
+  }
+  .main .landBox:last-child {
+    margin-right: 0;
+  }
+}

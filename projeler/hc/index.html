@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hazard Course</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery.min.js"></script>
+        <script> 
+            function chn() {
+                var land = document.querySelector('.landingEvents');
+                var wrap = document.querySelector('.wrapper');
+
+                wrap.style.backgroundImage = "url('img/haberler.jpg')";
+            }
+        </script> 
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="land">
+                <div class="logoSection">
+                    <a href="#">
+                        <img src="img/logo.png">
+                        <h3>HazardCourse</h3>
+                    </a>
+                </div>
+                <!-- <nav>
+                    <ul>
+                        <li><a href="#">Anasayfa</a></li>
+                        <li><a href="#">Forum</a></li>
+                        <li><a href="#">Haberler</a></li>
+                        <li><a href="#">Ekibimiz</a></li>
+                        <li><a href="#">Ansiklopedi</a></li>
+                        <li><a href="#">İletişim</a></li>
+                    </ul>
+                </nav> -->
+                
+            </header>
+            <section class="main">
+                <div class="landBox">
+                    <a class="landingMain landingLink" href="#">Portal</a>
+                </div>
+                <div class="landBox">
+                    <a class="landingEvent landingLink" href="#">Etkinlikler</a>
+                </div>
+                <div class="landBox">
+                    <a class="landingBlog landingLink" href="#">Blog</a>
+                </div>
+                <div class="landBox">
+                    <a class="landingForum landingLink" href="#">Forum</a>
+                </div>
+            </section>
+            <footer>
+                <div class="endLogo">
+                    <img src="">
+                </div>
+                <div class="trademark">
+                    <p>Half-Life, Half-Life 2, Steam, Left 4 Dead 2, Team Fortress 2 ve Counter-Strike: Global Offensive Valve Software'in lisanlı markalarıdır.</p>
+                </div>
+            </footer>
+        </div>
+        <script>
+            
+          /*  lndMainX = $(".landingMain").offset().top;
+            lndMainY = $(".landingMain").offset().left;
+            lndMainY = lndMainY + 73;
+            lndMainX = lndMainX + -14;
+            var posX = "-" + lndMainX + "px";
+            var posY = "-" + lndMainY + "px";
+            
+            curPos = posX + " " + posY;
+            
+            
+                $('.landingMain').css({'background-image': 'url("img/haberler.jpg")', 'background-position' : curPos });
+            $(window).resize(function() {
+            
+                            
+            lndMainX = $(".landingMain").offset().top;
+            lndMainY = $(".landingMain").offset().left;
+                
+                var posX = "-" + lndMainX + "px";
+                var posY = "-" + lndMainY + "px";
+                
+                curPos = posX + " " + posY;
+                
+                $('.main').html(posX);
+                
+                $('.landingMain').css({'background-image': 'url("img/haberler.jpg")', 'background-position' : curPos });
+                
+                
+                console.log(curPos);
+                
+            });
+            
+            $(".landingMain").mouseover(function() {
+                $(".wrapper").css({'background-image': 'url("img/haberler.jpg")'}).fadeTo('slow', 1);
+            });
+            $(".landingMain").mouseleave(function() {
+                $(".wrapper").css({'background-image': 'url("img/bg.jpg")'});
+            });
+            */
+        </script>
+    </body>
+</html>
