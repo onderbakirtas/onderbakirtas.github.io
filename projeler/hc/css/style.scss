@@ -25,8 +25,8 @@ a {
         h3 {
             font-family: 'Source Sans Pro', sans-serif;
             font-weight: 600;
-            font-size: 72px;
-            letter-spacing: 12px;
+            font-size: 60px;
+            letter-spacing: 9px;
             color: rgba(255,255,255,0.8);
             margin-top: 24px;
             text-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -38,69 +38,59 @@ a {
         height: 360px;
         margin: 80px auto auto;
         display: block;
-        
         .landBox {
-        display: inline-block;
-        width: 240px;
-        height: 135px;
-        margin-right: 20px;
-        font-size: 1.8rem;
-        line-height: 13.5rem;
-        position: relative;
-        color: #fff;
-        float: left;
-        text-align: center;
-        transition: 0.2s;
-            .landingLink {
-            display: block;
-            opacity: 0.65;
-            font-weight: 700;
-            width: 100%;
-            height: 100%;
-            color: #fff;
-            text-transform: uppercase;
-            transition: 0.2s;
+            display: inline-block;
+            width: 240px;
+            height: 135px;
+            margin-right: 20px;
+            font-size: 1.8rem;
+            line-height: 13.5rem;
             position: relative;
-            border: 1px solid rgba(255,255,255,0.1);
-            transform: translateY(0);
-        }
+            color: #fff;
+            float: left;
+            text-align: center;
+            transition: 0.2s;
+            .landingLink {
+                display: block;
+                opacity: 0.65;
+                font-weight: 700;
+                width: 100%;
+                height: 100%;
+                color: #fff;
+                text-transform: uppercase;
+                transition: 0.2s;
+                position: relative;
+                border: 1px solid rgba(255,255,255,0.1);
+                transform: translateY(0);
+            }
         
-        .landingLink:hover {
-            transform: translateY(-24px);
-            opacity: 1;
-            color: #F06048;
-            text-shadow: 0 0 2px rgba(0,0,0,0.5);
+            .landingLink:hover {
+                transform: translateY(-18px);
+                opacity: 1;
+                color: #F06048;
+                text-shadow: 0 0 2px rgba(0,0,0,0.5);
+                background-size: cover;
+            }
         }
-        }
-        .landingMain {
-            background: url('../img/haberler.jpg') no-repeat;
-        }
-        
-        .landingEvent {
-            background: url('../img/etkinlik.jpg') no-repeat;
-        }
-        
-        .landingBlog {
-            background: url('../img/blog.jpg') no-repeat;
-        }
-        
-        .landingForum {
-            background: url('../img/forum.jpg') no-repeat;
-        }
-        
+        .landingMain { background: url('../img/z1/haberler.jpg'); }
+        .landingMain:hover { background: url('../img/haberler.jpg'); }
+        .landingEvent { background: url('../img/z1/etkinlik.jpg'); }
+        .landingEvent:hover { background: url('../img/etkinlik.jpg'); }
+        .landingBlog { background: url('../img/z1/blog.jpg'); }
+        .landingBlog:hover { background: url('../img/blog.jpg'); }
+        .landingForum { background: url('../img/z1/forum.jpg'); }
+        .landingForum:hover { background: url('../img/forum.jpg'); }
         .landingMain, .landingEvent, .landingBlog, .landingForum {
-            background-size: 240px 135px;
+            background-size: cover;
         }
     }
     .landBox {
         width: 240px;
         height: 135px;
     }
-    
-}
 
+}
 @media only screen and (min-width: 1380px) {
-    
     .wrapper {
         background: url('../img/pattern.png'), url('../img/bg.jpg');
         background-repeat: repeat, no-repeat;
@@ -127,75 +117,58 @@ a {
             text-transform: uppercase;
         }
     }
-.main {
-    width: 1340px;
-    height: 60vh;
-    margin: auto;
-    display: block;
-    
-    .landBox {
-        display: inline-block;
-        width: 320px;
-        height: 180px;
-        margin-right: 20px;
-        font-size: 2.4rem;
-        line-height: 18rem;
-        position: relative;
-        color: #fff;
-        float: left;
-        text-align: center;
-        transition: 0.2s;
-        
-        .landingLink {
-            display: block;
-            opacity: 0.65;
-            font-weight: 700;
-            width: 100%;
-            height: 100%;
-            color: #fff;
-            text-transform: uppercase;
-            transition: 0.2s;
+    .main {
+        width: 1340px;
+        height: 60vh;
+        margin: auto;
+        display: block;
+        .landBox {
+            display: inline-block;
+            width: 320px;
+            height: 180px;
+            margin-right: 20px;
+            font-size: 2.4rem;
+            line-height: 18rem;
             position: relative;
-            border: 1px solid rgba(255,255,255,0.1);
-            transform: translateY(0);
+            color: #fff;
+            float: left;
+            text-align: center;
+            transition: 0.2s;
+            .landingLink {
+                display: block;
+                opacity: 0.65;
+                font-weight: 700;
+                width: 100%;
+                height: 100%;
+                color: #fff;
+                text-transform: uppercase;
+                transition: 0.2s;
+                position: relative;
+                border: 1px solid rgba(255,255,255,0.1);
+                transform: translateY(0);
+            }
+            .landingLink:hover {
+                transform: translateY(-24px);
+                opacity: 1;
+                color: #F06048;
+                text-shadow: 0 0 2px rgba(0,0,0,0.5);
+            }
+            .landingMain { background: url('../img/z1/haberler.jpg'); }
+            .landingMain:hover { background: url('../img/haberler.jpg'); }
+            .landingEvent { background: url('../img/z1/etkinlik.jpg'); }
+            .landingEvent:hover { background: url('../img/etkinlik.jpg'); }
+            .landingBlog { background: url('../img/z1/blog.jpg'); }
+            .landingBlog:hover { background: url('../img/blog.jpg'); }
+            .landingForum { background: url('../img/z1/forum.jpg'); }
+            .landingForum:hover { background: url('../img/forum.jpg'); }
+            .landingMain, .landingEvent, .landingBlog, .landingForum {
+                background-size: 320px 180px;
+            }
         }
-        
-        .landingLink:hover {
-            transform: translateY(-24px);
-            opacity: 1;
-            color: #F06048;
-            text-shadow: 0 0 2px rgba(0,0,0,0.5);
-        }
-        
-        .landingMain {
-            background: url('../img/haberler.jpg') no-repeat;
-        }
-        
-        .landingEvent {
-            background: url('../img/etkinlik.jpg') no-repeat;
-        }
-        
-        .landingBlog {
-            background: url('../img/blog.jpg') no-repeat;
-        }
-        
-        .landingForum {
-            background: url('../img/forum.jpg') no-repeat;
-        }
-        
-        .landingMain, .landingEvent, .landingBlog, .landingForum {
-            background-size: 320px 180px;
+        .landBox:last-child {
+            margin-right: 0;
         }
     }
-    
-    .landBox:last-child {
-        margin-right: 0;
-    }
-    
-    
-}
-
-    
 }
 
 

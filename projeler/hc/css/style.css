@@ -88,8 +88,8 @@ a {
   .land h3 {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
-    font-size: 72px;
-    letter-spacing: 12px;
+    font-size: 60px;
+    letter-spacing: 9px;
     color: rgba(255, 255, 255, 0.8);
     margin-top: 24px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -129,25 +129,38 @@ a {
     transform: translateY(0);
   }
   .main .landBox .landingLink:hover {
-    transform: translateY(-24px);
+    transform: translateY(-18px);
     opacity: 1;
     color: #F06048;
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    background-size: cover;
   }
   .main .landingMain {
-    background: url("../img/haberler.jpg") no-repeat;
+    background: url("../img/z1/haberler.jpg");
+  }
+  .main .landingMain:hover {
+    background: url("../img/haberler.jpg");
   }
   .main .landingEvent {
-    background: url("../img/etkinlik.jpg") no-repeat;
+    background: url("../img/z1/etkinlik.jpg");
+  }
+  .main .landingEvent:hover {
+    background: url("../img/etkinlik.jpg");
   }
   .main .landingBlog {
-    background: url("../img/blog.jpg") no-repeat;
+    background: url("../img/z1/blog.jpg");
+  }
+  .main .landingBlog:hover {
+    background: url("../img/blog.jpg");
   }
   .main .landingForum {
-    background: url("../img/forum.jpg") no-repeat;
+    background: url("../img/z1/forum.jpg");
+  }
+  .main .landingForum:hover {
+    background: url("../img/forum.jpg");
   }
   .main .landingMain, .main .landingEvent, .main .landingBlog, .main .landingForum {
-    background-size: 240px 135px;
+    background-size: cover;
   }
 
   .landBox {
@@ -223,16 +236,28 @@ a {
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   }
   .main .landBox .landingMain {
-    background: url("../img/haberler.jpg") no-repeat;
+    background: url("../img/z1/haberler.jpg");
+  }
+  .main .landBox .landingMain:hover {
+    background: url("../img/haberler.jpg");
   }
   .main .landBox .landingEvent {
-    background: url("../img/etkinlik.jpg") no-repeat;
+    background: url("../img/z1/etkinlik.jpg");
+  }
+  .main .landBox .landingEvent:hover {
+    background: url("../img/etkinlik.jpg");
   }
   .main .landBox .landingBlog {
-    background: url("../img/blog.jpg") no-repeat;
+    background: url("../img/z1/blog.jpg");
+  }
+  .main .landBox .landingBlog:hover {
+    background: url("../img/blog.jpg");
   }
   .main .landBox .landingForum {
-    background: url("../img/forum.jpg") no-repeat;
+    background: url("../img/z1/forum.jpg");
+  }
+  .main .landBox .landingForum:hover {
+    background: url("../img/forum.jpg");
   }
   .main .landBox .landingMain, .main .landBox .landingEvent, .main .landBox .landingBlog, .main .landBox .landingForum {
     background-size: 320px 180px;
