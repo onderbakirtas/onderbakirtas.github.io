@@ -1,0 +1,201 @@
+@import 'fonts';
+@import 'reset';
+@import 'vars';
+
+body {
+    font: $base;
+    background-color: #0f0f0f;
+}
+
+
+.wrapper {
+    @include text(1.4rem);
+    @include form-box(450px);
+    margin-top: 150px;
+    border: 1px solid #5E6869;
+    @include trns($clr-1, $clr-2);
+    color: $light-color;
+    
+    h2 {
+        text-align: center;
+        margin: 50px 0;
+        letter-spacing: 2px;
+    }
+    
+    .formGroup {
+        margin: 15px 0;
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        position: relative;
+        
+        label {
+            display: block;
+            width: 150px;
+            padding: 10px 0;
+            color: $txt;
+            float: left;
+        }
+        
+        input {
+            display: block;
+            width: 272px;
+            height: 40px;
+            outline: none;
+            padding: 0 13px;
+        }
+        
+        input[type=text], input[type=number] {
+            @include text(1rem);
+            font-family: $stack;
+            background: #000;
+            border: 1px solid #494949;
+            color: $light-color;
+        }
+
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            margin: 0; 
+        }
+        
+        input[type=checkbox] {
+            visibility: hidden;
+        }
+        
+        .checkbox {	
+            width: 18px;
+            height: 18px;
+            background: #000;
+            position: absolute;
+            left: 150px;
+            top: 10px;
+            
+            input {
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .followHero {
+                display: block;
+                width: 16px;
+                height: 16px;
+                transition: all .2s ease;
+                cursor: pointer;
+                position: absolute;
+                top: -0px;
+                padding: 0;
+                border: 2px solid #3C4343;
+                z-index: 1;
+                background: #000;
+            }
+            
+            .followHero:hover {
+                    border-color: #697879;
+            }
+            
+            input[type=checkbox]:checked + .followHero {
+                    width: 15px;
+                    height: 15px;
+                    position: relative;
+                    z-index: 2;
+                    background: linear-gradient(#DBF0F0, #B1DDDD);
+                    border-color: #000000;
+                    box-shadow: 0 0 20px #5D64AF;
+            } 
+        }
+        
+        .btn {
+            padding: 0;
+            height: 48px;
+            width: 200px;
+            margin: 10px;
+            float: left;
+            color: #FFFFFF;
+            font-family: $stack;
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            outline: none;
+            border-width: 2px;
+            border-style: solid;
+            cursor: pointer;
+            
+            span {
+                position: relative;
+                bottom: 0.3rem;
+            }
+        }
+        
+        .btnSend {
+            margin-right: 20px;
+            background: #395D4D;
+            border-right-color: #20312B;
+            border-left-color: #315B46;
+            border-top-color: #397152;
+            border-bottom-color: #21342B;
+            text-shadow: -1px -1px 0 rgba(0,0,0,0.25);
+            transition: 0.16s ease-in-out;
+            
+        }
+        .btnSend:hover {
+            background: #42BA71;
+            text-shadow: 0 0 8px rgba(255,255,255,1);
+            border-top-color: #3BA365;
+            border-bottom-color: #225B39;
+            border-right-color: #215536;
+            border-left-color: #368255;
+            box-shadow: 0 0 18px #42BA71;
+        }
+        
+        .btnCancel {
+            background: #512B2A;
+            text-shadow: -1px -1px 0 rgba(0,0,0,0.25);
+            border-top-color: #77322D;
+            border-right-color: #2A1514;
+            border-bottom-color: #2C1716;
+            border-left-color: #542825;
+            transition: 0.16s ease-in-out;
+        }
+        
+        .btnCancel:hover {
+            background: #A13930;
+            text-shadow: 0 0 8px rgba(255,255,255,1);
+            box-shadow: 0 0 18px #A13930;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

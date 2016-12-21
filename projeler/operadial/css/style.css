@@ -1,0 +1,53 @@
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.wrapper {
+    background: url('../img/bg.jpg') no-repeat #eee;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidebuttons {
+    float: left;
+    width: 50px;
+    height: 100vh;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+li a {
+    display: block;
+    color: rgba(255,255,255,0.6);
+    font-size: 20px;
+    padding: 15px 15px;
+    transition: 0.2s;
+    cursor: default;
+}
+
+li a:hover {
+    color: rgba(255,255,255,1);
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}

@@ -1,0 +1,25 @@
+@mixin text($size) {
+    font-size: $size;
+    line-height: $size;
+    font-weight: 400;
+    }
+@mixin form-box($width) {
+    width: $width;
+    margin: 0 auto;
+    padding: 0 $width / 12.5;
+}
+
+@mixin trns($col1, $col2) {
+    background: linear-gradient($col1, $col2);
+}
+
+
+$base: 62.5%/1rem 'Radiance', sans-serif;
+$stack: 'Radiance', sans-serif;
+$color: #32373C;
+$color2: #131617;
+$light-color: #f7f7f7;
+$txt: #AFB4B4;
+
+$clr-1: #252B2C;
+$clr-2: #121516;

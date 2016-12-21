@@ -1,0 +1,184 @@
+@font-face {
+  font-family: 'Radiance';
+  src: url("../fonts/radiance-webfont.woff2") format("woff2"), url("../fonts/radiance-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Radiance';
+  src: url("../fonts/radiance-semibold-webfont.woff2") format("woff2"), url("../fonts/radiance-semibold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Radiance';
+  src: url("../fonts/radiance-bold-webfont.woff2") format("woff2"), url("../fonts/radiance-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font: 62.5%/1rem "Radiance", sans-serif;
+  background-color: #0f0f0f;
+}
+
+.wrapper {
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  font-weight: 400;
+  width: 450px;
+  margin: 0 auto;
+  padding: 0 36px;
+  margin-top: 150px;
+  border: 1px solid #5E6869;
+  background: linear-gradient(#252B2C, #121516);
+  color: #f7f7f7;
+}
+.wrapper h2 {
+  text-align: center;
+  margin: 50px 0;
+  letter-spacing: 2px;
+}
+.wrapper .formGroup {
+  margin: 15px 0;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.wrapper .formGroup label {
+  display: block;
+  width: 150px;
+  padding: 10px 0;
+  color: #AFB4B4;
+  float: left;
+}
+.wrapper .formGroup input {
+  display: block;
+  width: 272px;
+  height: 40px;
+  outline: none;
+  padding: 0 13px;
+}
+.wrapper .formGroup input[type=text], .wrapper .formGroup input[type=number] {
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 400;
+  font-family: "Radiance", sans-serif;
+  background: #000;
+  border: 1px solid #494949;
+  color: #f7f7f7;
+}
+.wrapper .formGroup input[type=number]::-webkit-inner-spin-button,
+.wrapper .formGroup input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+.wrapper .formGroup input[type=checkbox] {
+  visibility: hidden;
+}
+.wrapper .formGroup .checkbox {
+  width: 18px;
+  height: 18px;
+  background: #000;
+  position: absolute;
+  left: 150px;
+  top: 10px;
+}
+.wrapper .formGroup .checkbox input {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  padding: 0;
+}
+.wrapper .formGroup .checkbox .followHero {
+  display: block;
+  width: 16px;
+  height: 16px;
+  transition: all .2s ease;
+  cursor: pointer;
+  position: absolute;
+  top: -0px;
+  padding: 0;
+  border: 2px solid #3C4343;
+  z-index: 1;
+  background: #000;
+}
+.wrapper .formGroup .checkbox .followHero:hover {
+  border-color: #697879;
+}
+.wrapper .formGroup .checkbox input[type=checkbox]:checked + .followHero {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(#DBF0F0, #B1DDDD);
+  border-color: #000000;
+  box-shadow: 0 0 20px #5D64AF;
+}
+.wrapper .formGroup .btn {
+  padding: 0;
+  height: 48px;
+  width: 200px;
+  margin: 10px;
+  float: left;
+  color: #FFFFFF;
+  font-family: "Radiance", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  outline: none;
+  border-width: 2px;
+  border-style: solid;
+  cursor: pointer;
+}
+.wrapper .formGroup .btn span {
+  position: relative;
+  bottom: 0.3rem;
+}
+.wrapper .formGroup .btnSend {
+  margin-right: 20px;
+  background: #395D4D;
+  border-right-color: #20312B;
+  border-left-color: #315B46;
+  border-top-color: #397152;
+  border-bottom-color: #21342B;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.25);
+  transition: 0.16s ease-in-out;
+}
+.wrapper .formGroup .btnSend:hover {
+  background: #42BA71;
+  text-shadow: 0 0 8px white;
+  border-top-color: #3BA365;
+  border-bottom-color: #225B39;
+  border-right-color: #215536;
+  border-left-color: #368255;
+  box-shadow: 0 0 18px #42BA71;
+}
+.wrapper .formGroup .btnCancel {
+  background: #512B2A;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.25);
+  border-top-color: #77322D;
+  border-right-color: #2A1514;
+  border-bottom-color: #2C1716;
+  border-left-color: #542825;
+  transition: 0.16s ease-in-out;
+}
+.wrapper .formGroup .btnCancel:hover {
+  background: #A13930;
+  text-shadow: 0 0 8px white;
+  box-shadow: 0 0 18px #A13930;
+}
