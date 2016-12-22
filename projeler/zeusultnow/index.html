@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Zeus Ult Now!</title>
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/picker.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -13,15 +15,11 @@
             <form action="success.html" method="post">
                 <div class="formGroup">
                     <label for="matchId">Match ID</label>
-                    <input type="number" id="matchId" name="matchId">
+                    <input type="text" id="matchId" name="matchId" autocomplete="off">
                 </div>
                 <div class="formGroup">
                     <label for="matchTime">Game Time</label>
-                    <input type="number" id="matchTime" name="matchTime">
-                </div>
-                <div class="formGroup">
-                    <label for="heroName">Hero Name</label>
-                    <input type="text" id="heroName" name="heroName">
+                    <input type="number" id="matchTime" name="matchTime autocomplete="off"">
                 </div>
                 <div class="formGroup">
                     <label>Follow Hero</label>
@@ -29,6 +27,10 @@
                         <input type="checkbox" id="followHero" name="followHero">
                         <label for="followHero" class="followHero"></label>
                     </div>
+                </div>
+                <div id="heroPicker" class="formGroup">
+                    <label for="heroName">Hero Name</label>
+                    <input type="text" id="heroName" name="heroName" autocomplete="off">
                 </div>
                 <div class="formGroup">
                     <button class="btn btnSend" type="submit"><span>Ultimate Ready</span></button>

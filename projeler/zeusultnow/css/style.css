@@ -129,6 +129,31 @@ body {
   border-color: #000000;
   box-shadow: 0 0 20px #5D64AF;
 }
+.wrapper .formGroup #heroDropdown {
+  display: block;
+  position: relative;
+  margin: 0px;
+  padding-left: 0px;
+  left: 150px;
+  top: -1px;
+  z-index: 3;
+  width: 298px;
+  max-height: 300px;
+  overflow: hidden;
+  background: #000;
+  border: 1px solid #494949;
+  border-top: none;
+  appearance: none;
+}
+.wrapper .formGroup #heroDropdown li {
+  list-style-type: none;
+  padding: 10px 13px;
+}
+.wrapper .formGroup #heroDropdown li:hover {
+  background: #333;
+  color: #FFF;
+  cursor: pointer;
+}
 .wrapper .formGroup .btn {
   padding: 0;
   height: 48px;
