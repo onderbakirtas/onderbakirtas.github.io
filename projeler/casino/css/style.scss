@@ -4,6 +4,10 @@ $fontpack: 'Roboto', sans-serif;
 $dkblue: #11438C;
 $ltblue: #0DAAE2;
 
+html, *, *:before, *:after {
+    box-sizing: border-box;
+}
+
 div, h1, h2, h3, h4, p {
     margin: 0;
     padding: 0;
@@ -35,6 +39,7 @@ div, h1, h2, h3, h4, p {
         background: #fbfbfb;
         position: relative;
         text-align: center;
+        left: -720px;
         
         .casinoSteps {
             width: 720px;

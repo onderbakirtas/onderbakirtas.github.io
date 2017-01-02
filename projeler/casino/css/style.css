@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin-ext");
+html, *, *:before, *:after {
+  box-sizing: border-box;
+}
+
 div, h1, h2, h3, h4, p {
   margin: 0;
   padding: 0;
@@ -29,6 +33,7 @@ div, h1, h2, h3, h4, p {
   background: #fbfbfb;
   position: relative;
   text-align: center;
+  left: -720px;
 }
 .wrapper .casinoBox .casinoSteps {
   width: 720px;
