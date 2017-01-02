@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin-ext");
+div, h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  width: 720px;
+  height: 540px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 100px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px #ddd;
+}
+.wrapper .casinoHeader {
+  background: #11438C;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 20px 0;
+}
+.wrapper .casinoBox {
+  width: 2880px;
+  height: 540px;
+  background: #fbfbfb;
+  position: relative;
+  text-align: center;
+}
+.wrapper .casinoBox .casinoSteps {
+  width: 720px;
+  height: 440px;
+  float: left;
+  overflow: hidden;
+}
+.wrapper .casinoBox .casinoSteps h3 {
+  margin: 30px 0;
+}
+.wrapper .casinoBox .casinoSteps input[type=radio] {
+  display: none;
+}
+.wrapper .casinoBox .casinoSteps label {
+  display: block;
+  float: left;
+  width: 142px;
+  height: 150px;
+  margin: 10px 19px;
+  cursor: pointer;
+}
+.wrapper .casinoBox .casinoSteps label img {
+  width: 128px;
+  height: 128px;
+}
