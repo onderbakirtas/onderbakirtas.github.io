@@ -129,6 +129,7 @@ div, h1, h2, h3, h4, p {
   display: block;
   margin-top: 3px;
   color: #DA721B;
+  cursor: pointer;
 }
 .wrapper .casinoBox .casinoSteps .perfectPick .curRating .rating, .wrapper .casinoBox .casinoSteps .perfectPick .curRating .ratingOn {
   background: url("../img/stars.png") repeat-x;
@@ -166,6 +167,7 @@ div, h1, h2, h3, h4, p {
   display: block;
   width: 100%;
   vertical-align: top;
+  overflow: hidden;
 }
 .wrapper .casinoBox .casinoSteps .resultFooter .badge {
   display: block;
@@ -174,10 +176,42 @@ div, h1, h2, h3, h4, p {
   float: left;
   margin: 0 -80px 0 80px;
 }
-.wrapper .casinoBox .casinoSteps .resultFooter .bonus {
+.wrapper .casinoBox .casinoSteps .resultFooter .playNow {
+  display: block;
+  float: left;
+  width: 600px;
+}
+.wrapper .casinoBox .casinoSteps .resultFooter .playNow .bonus {
   color: #27C724;
   font-weight: 700;
   margin: 10px 0 15px 0;
   text-shadow: 1px 1px 0 #8EFF8C;
   font-size: 30px;
+}
+.wrapper .casinoBox .casinoSteps .resultFooter .playNow .approveDeal {
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  background: #f88c32;
+  box-shadow: 0px 2px 0 #b75b0f;
+  text-shadow: 1px 1px 1px #b75b0f;
+  margin: 0 auto 12px;
+  max-width: 315px;
+  line-height: 24px;
+  padding: 12px 30px;
+  cursor: pointer;
+}
+.wrapper .casinoBox .casinoSteps .resultFooter .playNow .resultClaimed {
+  font-size: 1.1em;
+  line-height: 1em;
+  margin: 10px 0;
+}
+.wrapper .casinoBox .casinoSteps .resultFooter .playNow .resultClaimed .green {
+  color: #55b219;
+  font-size: 1.2em;
 }
