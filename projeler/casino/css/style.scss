@@ -23,6 +23,7 @@ div, h1, h2, h3, h4, p {
     margin-top: 100px;
     border: 2px solid #fff;
     box-shadow: 0 0 0 1px #ddd;
+    font-size: 14px;
     
     .casinoHeader {
         background: $dkblue;
@@ -34,12 +35,11 @@ div, h1, h2, h3, h4, p {
     }
     
     .casinoBox {
-        width: 2880px;
+        width: 4320px;
         height: 540px;
-        background: #fbfbfb;
+        background: #f5f5f5;
         position: relative;
         text-align: center;
-        left: -720px;
         
         .casinoSteps {
             width: 720px;
@@ -48,14 +48,23 @@ div, h1, h2, h3, h4, p {
             overflow: hidden;
             
             h3 {
-                margin: 30px 0;
+                margin: 20px 0;
+                font-size: 20px;
             }
             
-            input[type=radio] {
-                display: none;
+            .answers {
+                width: 648px;
+                height: 210px;
+                margin: auto;
             }
             
-            label {
+            .game, .method, .payout, .device {
+                display: block;
+                float: left;
+                cursor: pointer;
+            }
+            
+            .game {
                 display: block;
                 float: left;
                 width: 142px;
@@ -67,6 +76,176 @@ div, h1, h2, h3, h4, p {
                     height: 128px;
                 }
             }
+            
+            .method, .payout, .device {
+                width: 200px;
+                height: 200px;
+                background: #fff;
+                margin: 5px 8px;
+                padding: 12px;
+                border: 1px solid #dfdfdf;
+                
+                .icon {
+                    width: 130px;
+                    height: 130px;
+                    margin: 0 auto;
+                    border: 1px solid #dfdfdf;
+                    border-radius: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                
+                span {
+                    display: inline-block;
+                    margin-top: 12px;
+                    border-radius: 18px;
+                    padding: 4px 14px;
+                    border: 1px solid $dkblue;
+                    color: $dkblue;
+                }
+            }
+            
+            .loading {
+                margin: 30px auto 50px;
+            }
+            
+            .perfectPick {
+                width: 95%;
+                margin: 30px auto 25px;
+                border: 2px solid #ff7E18;
+                border-radius: 5px;
+                padding: 7px 0;
+                display: flex;
+                background: #fff;
+                
+                .result {
+                    flex-grow: 1;
+                    padding: 4px;
+                    margin: 0 6px;
+                    vertical-align: top;
+                }
+                
+                .label {
+                    display: block;
+                    font-weight: 700;
+                }
+                                
+                .casinoName {
+                    border: 1px solid #dfdfdf;
+                    border-radius: 4px;
+                    
+                    img {
+                        padding: 6px;
+                        max-width: 110px;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    
+                    #reviewLink {
+                        display: block;
+                        margin-top: 3px;
+                        color: #DA721B;
+                    }
+                }
+                .curRating {
+                    .rating, .ratingOn {
+                        background: url('../img/stars.png') repeat-x;
+                        height: 24px;
+                        position: relative;
+                        width: 135px;
+                        display: block;
+                    }
+                    
+                    .rating {
+                        transform: scale(0.7);
+                        margin: 3px auto;
+                    }
+                    
+                    .ratingOn {
+                        background-position: 0 -26px;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 0;
+                    }
+                }
+                
+                .payoutSpeed .green {
+                    color: #55B219;
+                    font-size: 1.5em;
+                    font-weight: 700;
+                    display: block;
+                    margin-top: 10px;
+                }
+                
+                .prefDevice #resultDevice, .prefMethod #resultDealer {
+                    display: block;
+                    height: 70px;
+                    width: 80px;
+                    margin: auto;
+                    transform: scale(0.7);
+                }
+            }
+            
+            .resultFooter {
+                display: block;
+                width: 100%;
+                vertical-align: top;
+                
+                .badge {
+                    display: block;
+                    width: 120px;
+                    height: 120px;
+                    float: left;
+                    margin: 0 -80px 0 80px;
+                
+                }
+                .bonus {
+                    color: #27C724;
+                    font-weight: 700;
+                    margin: 10px 0 15px 0;
+                    text-shadow: 1px 1px 0 #8EFF8C;
+                    font-size: 30px;
+                }
+            }
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
