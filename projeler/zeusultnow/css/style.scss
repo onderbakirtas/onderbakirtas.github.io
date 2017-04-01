@@ -31,7 +31,7 @@ body {
         
         label {
             display: block;
-            width: 150px;
+            width: 170px;
             padding: 10px 0;
             color: $txt;
             float: left;
@@ -39,7 +39,7 @@ body {
         
         input {
             display: block;
-            width: 272px;
+            width: 252px;
             height: 40px;
             outline: none;
             padding: 0 13px;
@@ -115,10 +115,10 @@ body {
             position: relative;
             margin: 0px;
             padding-left: 0px;
-            left: 150px;
+            left: 170px;
             top: -1px;
             z-index: 3;
-            width: 298px;
+            width: 278px;
 			max-height: 300px;
 			overflow: hidden;
             background: #000;
@@ -195,6 +195,10 @@ body {
             background: #A13930;
             text-shadow: 0 0 8px rgba(255,255,255,1);
             box-shadow: 0 0 18px #A13930;
+        }
+        
+        &:last-child {
+            margin: 40px 0 25px;
         }
     }
 }

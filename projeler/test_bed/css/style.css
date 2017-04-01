@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin-ext');
+
+html, *, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.content {
+    margin: 0 auto;   
+    overflow: hidden;
+    margin-top: 50px;
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #ddd;
+    background: #f5f5f5;
+}
+.content .header {
+    background: #11438C;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 20px 0;
+}
+.header > h1 {
+    font-size: 24px;
+}
+
+.sectiontitle {
+    margin: 20px 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.casinoBullets {  
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid #dfdfdf;
+}
+.casinoBullets span {
+    padding: 20px 10px;
+    display: inline-block;
+}
+.casinoBullets ul {
+    display: inline-block;
+    padding: 10px 0;
+}
+.casinoBullets ul li {
+    box-sizing: content-box;
+    display: inline-block;
+  border: 1px solid #55b219;
+  color: #55b219;
+  padding: 5px;
+  border-radius: 100%;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  margin-right: 10px;
+  position: relative;
+  transition: all 0.5s;}
+
+.casinoBullets ul li:after {  content: '';
+  width: 15px;
+  height: 1px;
+  position: absolute;
+  top: 16px;
+  left: -15px;
+  background-color: #ccc;
+  transition: all 0.3s;
+}
+.casinoBullets ul li:first-child:after {
+  content: none;
+}
+.casinoBullets ul .finderResult {
+  width: 50px;
+  border-radius: 30px;
+}
+.casinoBullets ul li.complete {
+  color: #fff;
+  background-color: #55b219;
+  cursor: pointer;
+}
+.step {
+    padding-bottom: 20px;
+    margin: 0 auto;
+    float: left;
+    text-align: center;
+}
+.game {
+    width: 126px;
+    height: 130px;
+    font-size: 16px;
+    display: inline-block;
+    margin: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.game > img {
+    width: 110px;
+    height: 110px;
+}
+
+.opt {
+    background: #ffffff;
+    margin: 5px 8px;
+    padding: 12px;
+    font-size: 0;
+    box-shadow: 0 0 0 1px #dfdfdf;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.opt .icon {
+    margin: 0 auto;
+    box-shadow: 0 0 0 1px #dfdfdf;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.opt span {
+    display: inline-block;
+    border-radius: 18px;
+    border: 1px solid #11438C;
+    color: #11438C;
+    font-size: 14px;
+}
+
+.perfectpick {
+    border: 2px solid #ff7e18;
+    border-radius: 5px;
+    padding: 7px 0;
+    margin: 0 10px;
+    background: #fff;
+    overflow: hidden;
+}
+.perfectpick .result {
+    display: inline-block;
+    width: 124px;
+    min-height: 80px; 
+    padding: 4px;
+    margin: 0 6px;
+    vertical-align: top;
+}
+.perfectpick .label {
+    font-weight: 700;
+    display: block;
+}
+.casinoname {
+    border: 1px solid #dfdfdf;
+    border-radius: 4px;
+}
+.casinoname img {
+    padding: 6px;
+    max-width: 110px;
+    display: inline-block;
+}
+.casinoname .reviewlink {
+    display: block;
+    margin-top: 3px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #da781b;
+    text-decoration: none;
+}
+.rating {
+    transform: scale(0.7);
+    margin: 3px auto;
+    background: url('../img/stars.png') repeat-x;
+    height: 24px;
+    position: relative;
+    width: 135px;
+    display: block;
+}
+.ratinglevel {
+    background: url('../img/stars.png') repeat-x;
+    height: 24px;
+    background-position: 0 -26px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+}
+.starlabel {
+    font-size: 14px;
+    line-height: 18px;
+}
+.payoutspeed .green {
+    color: #55b219;
+    font-size: 22px;
+    display: block;
+    font-weight: 700;
+    margin-top: 10px;
+}
+#resultDevice, #resultDealer {
+    display: block;
+    height: 70px;
+    width: 80px;
+    margin: auto;
+    transform: scale(0.7);
+}
+.resultfooter {
+    display: block;
+    width: 100%;
+    vertical-align: top;
+    overflow: hidden;
+    margin: 20px 0 0;
+}
+.badge {
+    float: left;
+    width: 120px;
+    display: block;
+    margin: 20px 60px;
+}
+.playnow {
+    display: block;
+    float: left;
+    width: 100%;
+}
+.bonus {
+    display: block;
+    color: #27c724;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 10px 0 15px;
+    text-shadow: 1px 1px 0 #8EFF8C;
+}
+.takeoffer {    
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    background: #f88c32;
+    box-shadow: 0px 2px 0 #b75b0f;
+    text-shadow: 1px 1px 1px #b75b0f;
+    margin: 0 auto 12px;
+    line-height: 24px;
+    padding: 12px 30px;
+    cursor: pointer;
+}
+.startover {    
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 13px;
+    margin-left: 40px;
+    width: 90px;
+    color: #999;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.resultclaimed {
+    margin: 10px 0;
+}
+.tint {
+    font-size: 18px;
+    color: #55b219;
+}
+@media screen and (min-width: 320px) {
+    .content {
+        width: 300px;
+    }
+    .wrap {
+        width: 1920px;
+    }
+    .casinoBullets span {
+        display: none;
+    }
+    .step {
+        width: 300px;
+    }
+    .opt {
+        width: 200px;
+        height: 200px;
+    }
+    .opt .icon {
+        width: 130px;
+        height: 130px;
+    }
+    .icon img {
+        width: 80px;
+        height: 70px;
+    }
+    .opt span {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 4px 14px;
+        margin-top: 12px;
+    }
+    .badge {
+        width: 220px;
+        padding: 0 40px;
+        margin: 0 40px;
+    }
+    .startover {
+        display: none;
+    }
+    .resultclaimed {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 481px) {
+    .content {
+        width: 460px;
+    }
+    .wrap {
+        width: 2760px;
+    }
+    .casinoBullets span {
+        display: inline-block;
+    }
+    .step {
+        width: 460px;
+    }
+    .opt {
+        width: 130px;
+        height: 130px;
+    }
+    .opt .icon {
+        width: 80px;
+        height: 80px;
+    }
+    .icon img {
+        width: 56px;
+        height: 49px;
+    }
+    .opt span {
+        font-size: 13px;
+        line-height: 15px;
+        padding: 3px 12px;
+        margin-top: 8px;
+    }
+    .badge {
+        width: 90px;
+        height: 90px;
+        padding: 0;
+        margin: 15px 20px;
+    }
+    .playnow {
+        width: 330px;
+    }
+    .startover {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    .content {
+        width: 540px;  
+    }
+    .wrap {
+        width: 3240px;
+    }
+    .step {
+        width: 540px;
+    }
+    .opt {
+        width: 160px;
+        height: 160px;
+    }
+    .opt .icon {
+        width: 100px;
+        height: 100px;
+    }
+    .icon img {
+        width: 64px;
+        height: 56px;
+    }
+    .opt span {
+        font-size: 14px;
+        line-height: 16px;
+        padding: 3px 12px;
+        margin-top: 10px;
+    }
+    .badge {
+        margin: 10px;
+        width: 120px;
+        height: 120px;
+    }
+    .playnow {
+        width: 400px;
+    }
+    .resultclaimed {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) { 
+    .content {
+        width: 720px;
+    }   
+    .wrap {
+        width: 4320px;
+    }
+    .step {
+        width: 720px;
+    }
+    .opt {
+        width: 200px;
+        height: 200px;
+    }
+    .opt .icon {
+        width: 130px;
+        height: 130px;
+    }
+    .icon img {
+        width: 80px;
+        height: 70px;
+    }
+    .opt span {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 4px 14px;
+        margin-top: 12px;
+    }
+    .badge {
+        width: 120px;
+        margin: 0 40px;
+    }
+    .playnow {
+        width: 500px;
+    }
+}

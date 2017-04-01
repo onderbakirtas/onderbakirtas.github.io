@@ -1,0 +1,33 @@
+@import 'vars';
+
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+  font-size: 10px;
+  font-weight: $font-weight-regular;
+    font-family: $font-family;
+}
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    color: $white;
+    line-height: $font-height;
+}
+
+ul, ol, li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+a {
+  text-decoration: none;
+  color: darken($white, 30%);
+}

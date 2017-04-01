@@ -9,8 +9,18 @@ div, h1, h2, h3, h4, p {
   font-family: "Roboto", sans-serif;
 }
 
+@media screen and (max-width: 420px) {
+  .wrapper {
+    width: 350px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+}
 .wrapper {
-  width: 720px;
+  width: 100%;
+  max-width: 720px;
   height: 540px;
   position: relative;
   overflow: hidden;
@@ -28,34 +38,106 @@ div, h1, h2, h3, h4, p {
   font-weight: 700;
   padding: 20px 0;
 }
+.wrapper .casinoBullets {
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #dfdfdf;
+}
+.wrapper .casinoBullets span {
+  margin-right: 10px;
+}
+.wrapper .casinoBullets .startover {
+  position: absolute;
+  right: 20px;
+  top: 13px;
+  border: 1px solid #55b219;
+  border-radius: 4px;
+  padding: 5px;
+  color: #55b219;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.wrapper .casinoBullets .startover:hover {
+  background: #55b219;
+  color: #fff;
+}
+.wrapper .casinoBullets ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+.wrapper .casinoBullets ul li {
+  box-sizing: content-box;
+  display: inline-block;
+  border: 1px solid #55b219;
+  color: #55b219;
+  padding: 5px;
+  border-radius: 100%;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  margin-right: 26px;
+  position: relative;
+  transition: all 0.5s;
+}
+.wrapper .casinoBullets ul li.complete {
+  color: #fff;
+  background-color: #55b219;
+  cursor: pointer;
+}
+.wrapper .casinoBullets ul li:after {
+  content: '';
+  width: 30px;
+  height: 1px;
+  position: absolute;
+  top: 16px;
+  left: -31px;
+  background-color: #ccc;
+  transition: all 0.3s;
+}
+.wrapper .casinoBullets ul li:first-child:after {
+  content: none;
+}
+.wrapper .casinoBullets ul .finderResult {
+  width: 50px;
+  border-radius: 30px;
+}
 .wrapper .casinoBox {
-  width: 4320px;
+  width: 700%;
   height: 540px;
   background: #f5f5f5;
   position: relative;
   text-align: center;
 }
-.wrapper .casinoBox .casinoSteps {
-  width: 720px;
+.wrapper .casinoBox .casinoSteps, .wrapper .casinoBox .casinoSearch, .wrapper .casinoBox .casinoResults {
+  width: 100%;
+  max-width: 720px;
   height: 440px;
   float: left;
   overflow: hidden;
 }
-.wrapper .casinoBox .casinoSteps h3 {
+.wrapper .casinoBox .casinoSteps h3, .wrapper .casinoBox .casinoSearch h3, .wrapper .casinoBox .casinoResults h3 {
   margin: 20px 0;
   font-size: 20px;
 }
-.wrapper .casinoBox .casinoSteps .answers {
+.wrapper .casinoBox .casinoSteps .answers, .wrapper .casinoBox .casinoSearch .answers, .wrapper .casinoBox .casinoResults .answers {
   width: 648px;
   height: 210px;
   margin: auto;
 }
-.wrapper .casinoBox .casinoSteps .game, .wrapper .casinoBox .casinoSteps .method, .wrapper .casinoBox .casinoSteps .payout, .wrapper .casinoBox .casinoSteps .device {
+.wrapper .casinoBox .casinoSteps .game, .wrapper .casinoBox .casinoSteps .method, .wrapper .casinoBox .casinoSteps .payout, .wrapper .casinoBox .casinoSteps .device, .wrapper .casinoBox .casinoSearch .game, .wrapper .casinoBox .casinoSearch .method, .wrapper .casinoBox .casinoSearch .payout, .wrapper .casinoBox .casinoSearch .device, .wrapper .casinoBox .casinoResults .game, .wrapper .casinoBox .casinoResults .method, .wrapper .casinoBox .casinoResults .payout, .wrapper .casinoBox .casinoResults .device {
   display: block;
   float: left;
   cursor: pointer;
 }
-.wrapper .casinoBox .casinoSteps .game {
+.wrapper .casinoBox .casinoSteps .game, .wrapper .casinoBox .casinoSearch .game, .wrapper .casinoBox .casinoResults .game {
   display: block;
   float: left;
   width: 142px;
@@ -63,11 +145,11 @@ div, h1, h2, h3, h4, p {
   margin: 10px 19px;
   cursor: pointer;
 }
-.wrapper .casinoBox .casinoSteps .game img {
+.wrapper .casinoBox .casinoSteps .game img, .wrapper .casinoBox .casinoSearch .game img, .wrapper .casinoBox .casinoResults .game img {
   width: 128px;
   height: 128px;
 }
-.wrapper .casinoBox .casinoSteps .method, .wrapper .casinoBox .casinoSteps .payout, .wrapper .casinoBox .casinoSteps .device {
+.wrapper .casinoBox .casinoSteps .method, .wrapper .casinoBox .casinoSteps .payout, .wrapper .casinoBox .casinoSteps .device, .wrapper .casinoBox .casinoSearch .method, .wrapper .casinoBox .casinoSearch .payout, .wrapper .casinoBox .casinoSearch .device, .wrapper .casinoBox .casinoResults .method, .wrapper .casinoBox .casinoResults .payout, .wrapper .casinoBox .casinoResults .device {
   width: 200px;
   height: 200px;
   background: #fff;
@@ -75,7 +157,7 @@ div, h1, h2, h3, h4, p {
   padding: 12px;
   border: 1px solid #dfdfdf;
 }
-.wrapper .casinoBox .casinoSteps .method .icon, .wrapper .casinoBox .casinoSteps .payout .icon, .wrapper .casinoBox .casinoSteps .device .icon {
+.wrapper .casinoBox .casinoSteps .method .icon, .wrapper .casinoBox .casinoSteps .payout .icon, .wrapper .casinoBox .casinoSteps .device .icon, .wrapper .casinoBox .casinoSearch .method .icon, .wrapper .casinoBox .casinoSearch .payout .icon, .wrapper .casinoBox .casinoSearch .device .icon, .wrapper .casinoBox .casinoResults .method .icon, .wrapper .casinoBox .casinoResults .payout .icon, .wrapper .casinoBox .casinoResults .device .icon {
   width: 130px;
   height: 130px;
   margin: 0 auto;
@@ -85,7 +167,7 @@ div, h1, h2, h3, h4, p {
   align-items: center;
   justify-content: center;
 }
-.wrapper .casinoBox .casinoSteps .method span, .wrapper .casinoBox .casinoSteps .payout span, .wrapper .casinoBox .casinoSteps .device span {
+.wrapper .casinoBox .casinoSteps .method span, .wrapper .casinoBox .casinoSteps .payout span, .wrapper .casinoBox .casinoSteps .device span, .wrapper .casinoBox .casinoSearch .method span, .wrapper .casinoBox .casinoSearch .payout span, .wrapper .casinoBox .casinoSearch .device span, .wrapper .casinoBox .casinoResults .method span, .wrapper .casinoBox .casinoResults .payout span, .wrapper .casinoBox .casinoResults .device span {
   display: inline-block;
   margin-top: 12px;
   border-radius: 18px;
@@ -93,10 +175,10 @@ div, h1, h2, h3, h4, p {
   border: 1px solid #11438C;
   color: #11438C;
 }
-.wrapper .casinoBox .casinoSteps .loading {
+.wrapper .casinoBox .casinoSteps .loading, .wrapper .casinoBox .casinoSearch .loading, .wrapper .casinoBox .casinoResults .loading {
   margin: 30px auto 50px;
 }
-.wrapper .casinoBox .casinoSteps .perfectPick {
+.wrapper .casinoBox .casinoSteps .perfectPick, .wrapper .casinoBox .casinoSearch .perfectPick, .wrapper .casinoBox .casinoResults .perfectPick {
   width: 95%;
   margin: 30px auto 25px;
   border: 2px solid #ff7E18;
@@ -105,90 +187,90 @@ div, h1, h2, h3, h4, p {
   display: flex;
   background: #fff;
 }
-.wrapper .casinoBox .casinoSteps .perfectPick .result {
+.wrapper .casinoBox .casinoSteps .perfectPick .result, .wrapper .casinoBox .casinoSearch .perfectPick .result, .wrapper .casinoBox .casinoResults .perfectPick .result {
   flex-grow: 1;
   padding: 4px;
   margin: 0 6px;
   vertical-align: top;
 }
-.wrapper .casinoBox .casinoSteps .perfectPick .label {
+.wrapper .casinoBox .casinoSteps .perfectPick .label, .wrapper .casinoBox .casinoSearch .perfectPick .label, .wrapper .casinoBox .casinoResults .perfectPick .label {
   display: block;
   font-weight: 700;
 }
-.wrapper .casinoBox .casinoSteps .perfectPick .casinoName {
+.wrapper .casinoBox .casinoSteps .perfectPick .casinoName, .wrapper .casinoBox .casinoSearch .perfectPick .casinoName, .wrapper .casinoBox .casinoResults .perfectPick .casinoName {
   border: 1px solid #dfdfdf;
   border-radius: 4px;
 }
-.wrapper .casinoBox .casinoSteps .perfectPick .casinoName img {
+.wrapper .casinoBox .casinoSteps .perfectPick .casinoName img, .wrapper .casinoBox .casinoSearch .perfectPick .casinoName img, .wrapper .casinoBox .casinoResults .perfectPick .casinoName img {
   padding: 6px;
   max-width: 110px;
   display: inline-block;
   vertical-align: middle;
 }
-.wrapper .casinoBox .casinoSteps .perfectPick .casinoName #reviewLink {
+.wrapper .casinoBox .casinoSteps .perfectPick .casinoName #reviewLink, .wrapper .casinoBox .casinoSearch .perfectPick .casinoName #reviewLink, .wrapper .casinoBox .casinoResults .perfectPick .casinoName #reviewLink {
   display: block;
   margin-top: 3px;
   color: #DA721B;
   cursor: pointer;
 }
-.wrapper .casinoBox .casinoSteps .perfectPick .curRating .rating, .wrapper .casinoBox .casinoSteps .perfectPick .curRating .ratingOn {
+.wrapper .casinoBox .casinoSteps .perfectPick .curRating .rating, .wrapper .casinoBox .casinoSteps .perfectPick .curRating .ratingOn, .wrapper .casinoBox .casinoSearch .perfectPick .curRating .rating, .wrapper .casinoBox .casinoSearch .perfectPick .curRating .ratingOn, .wrapper .casinoBox .casinoResults .perfectPick .curRating .rating, .wrapper .casinoBox .casinoResults .perfectPick .curRating .ratingOn {
   background: url("../img/stars.png") repeat-x;
   height: 24px;
   position: relative;
   width: 135px;
   display: block;
 }
-.wrapper .casinoBox .casinoSteps .perfectPick .curRating .rating {
+.wrapper .casinoBox .casinoSteps .perfectPick .curRating .rating, .wrapper .casinoBox .casinoSearch .perfectPick .curRating .rating, .wrapper .casinoBox .casinoResults .perfectPick .curRating .rating {
   transform: scale(0.7);
   margin: 3px auto;
 }
-.wrapper .casinoBox .casinoSteps .perfectPick .curRating .ratingOn {
+.wrapper .casinoBox .casinoSteps .perfectPick .curRating .ratingOn, .wrapper .casinoBox .casinoSearch .perfectPick .curRating .ratingOn, .wrapper .casinoBox .casinoResults .perfectPick .curRating .ratingOn {
   background-position: 0 -26px;
   position: absolute;
   left: 0;
   top: 0;
   width: 0;
 }
-.wrapper .casinoBox .casinoSteps .perfectPick .payoutSpeed .green {
+.wrapper .casinoBox .casinoSteps .perfectPick .payoutSpeed .green, .wrapper .casinoBox .casinoSearch .perfectPick .payoutSpeed .green, .wrapper .casinoBox .casinoResults .perfectPick .payoutSpeed .green {
   color: #55B219;
   font-size: 1.5em;
   font-weight: 700;
   display: block;
   margin-top: 10px;
 }
-.wrapper .casinoBox .casinoSteps .perfectPick .prefDevice #resultDevice, .wrapper .casinoBox .casinoSteps .perfectPick .prefMethod #resultDealer {
+.wrapper .casinoBox .casinoSteps .perfectPick .prefDevice #resultDevice, .wrapper .casinoBox .casinoSteps .perfectPick .prefMethod #resultDealer, .wrapper .casinoBox .casinoSearch .perfectPick .prefDevice #resultDevice, .wrapper .casinoBox .casinoSearch .perfectPick .prefMethod #resultDealer, .wrapper .casinoBox .casinoResults .perfectPick .prefDevice #resultDevice, .wrapper .casinoBox .casinoResults .perfectPick .prefMethod #resultDealer {
   display: block;
   height: 70px;
   width: 80px;
   margin: auto;
   transform: scale(0.7);
 }
-.wrapper .casinoBox .casinoSteps .resultFooter {
+.wrapper .casinoBox .casinoSteps .resultFooter, .wrapper .casinoBox .casinoSearch .resultFooter, .wrapper .casinoBox .casinoResults .resultFooter {
   display: block;
   width: 100%;
   vertical-align: top;
   overflow: hidden;
 }
-.wrapper .casinoBox .casinoSteps .resultFooter .badge {
+.wrapper .casinoBox .casinoSteps .resultFooter .badge, .wrapper .casinoBox .casinoSearch .resultFooter .badge, .wrapper .casinoBox .casinoResults .resultFooter .badge {
   display: block;
   width: 120px;
   height: 120px;
   float: left;
   margin: 0 -80px 0 80px;
 }
-.wrapper .casinoBox .casinoSteps .resultFooter .playNow {
+.wrapper .casinoBox .casinoSteps .resultFooter .playNow, .wrapper .casinoBox .casinoSearch .resultFooter .playNow, .wrapper .casinoBox .casinoResults .resultFooter .playNow {
   display: block;
   float: left;
   width: 600px;
 }
-.wrapper .casinoBox .casinoSteps .resultFooter .playNow .bonus {
+.wrapper .casinoBox .casinoSteps .resultFooter .playNow .bonus, .wrapper .casinoBox .casinoSearch .resultFooter .playNow .bonus, .wrapper .casinoBox .casinoResults .resultFooter .playNow .bonus {
   color: #27C724;
   font-weight: 700;
   margin: 10px 0 15px 0;
   text-shadow: 1px 1px 0 #8EFF8C;
   font-size: 30px;
 }
-.wrapper .casinoBox .casinoSteps .resultFooter .playNow .approveDeal {
+.wrapper .casinoBox .casinoSteps .resultFooter .playNow .approveDeal, .wrapper .casinoBox .casinoSearch .resultFooter .playNow .approveDeal, .wrapper .casinoBox .casinoResults .resultFooter .playNow .approveDeal {
   display: inline-block;
   text-align: center;
   font-weight: bold;
@@ -206,12 +288,12 @@ div, h1, h2, h3, h4, p {
   padding: 12px 30px;
   cursor: pointer;
 }
-.wrapper .casinoBox .casinoSteps .resultFooter .playNow .resultClaimed {
+.wrapper .casinoBox .casinoSteps .resultFooter .playNow .resultClaimed, .wrapper .casinoBox .casinoSearch .resultFooter .playNow .resultClaimed, .wrapper .casinoBox .casinoResults .resultFooter .playNow .resultClaimed {
   font-size: 1.1em;
   line-height: 1em;
   margin: 10px 0;
 }
-.wrapper .casinoBox .casinoSteps .resultFooter .playNow .resultClaimed .green {
+.wrapper .casinoBox .casinoSteps .resultFooter .playNow .resultClaimed .green, .wrapper .casinoBox .casinoSearch .resultFooter .playNow .resultClaimed .green, .wrapper .casinoBox .casinoResults .resultFooter .playNow .resultClaimed .green {
   color: #55b219;
   font-size: 1.2em;
 }

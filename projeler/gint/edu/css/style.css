@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:200,400,500,600,700&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700");
+html, body, ul, ol, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+cite, b, u, i, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td,
+article, aside, main, header, canvas, menu, nav, section, audio, video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 100%;
+  outline: none;
+}
+
+article, aside, figure, figcaption, header, footer, menu, nav, section {
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+  font-size: 10px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.4rem;
+  height: 100%;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.gutter, .one-piece, .two-piece, .three-piece, .four-piece, .five-piece, .six-piece, .seven-piece, .eight-piece, .nine-piece, .ten-piece {
+  padding: 1%;
+}
+
+.bar {
+  clear: both;
+  width: 100%;
+}
+
+.bar-fixed {
+  clear: both;
+  width: 1220px;
+  margin: 0 auto;
+}
+
+.one-piece {
+  width: 10%;
+}
+
+.two-piece {
+  width: 20%;
+}
+
+.three-piece {
+  width: 30%;
+}
+
+.four-piece {
+  width: 40%;
+}
+
+.five-piece {
+  width: 50%;
+}
+
+.six-piece {
+  width: 60%;
+}
+
+.seven-piece {
+  width: 70%;
+}
+
+.eight-piece {
+  width: 80%;
+}
+
+.nine-piece {
+  width: 90%;
+}
+
+.ten-piece {
+  width: 100%;
+}
+
+body {
+  font: 100% "Rubik", sans-serif;
+}
+
+header {
+  width: 100%;
+}
+header .siteNav {
+  color: #6b7b8d;
+  width: 100%;
+  height: 4.8rem;
+  background: #435360;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+header .siteNav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+header .siteNav ul li {
+  display: flex;
+  justify-content: flex-end;
+}
+header .siteNav ul li a {
+  text-decoration: none;
+  color: #f1f4f5;
+  font-size: 1.6rem;
+  height: 4.8rem;
+  display: flex;
+  width: 4.8rem;
+  justify-content: center;
+  align-items: center;
+}
+header .siteNav ul li .powerOff {
+  background: #FF6B6B;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  background: #f1f4f5;
+}
+main .appNav {
+  width: 225px;
+  height: 100%;
+  background: #FFFFFF;
+  box-shadow: 1px 0 4px rgba(0, 0, 0, 0.12), 1px 0 3px rgba(0, 0, 0, 0.24);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  flex: 1;
+  z-index: 2;
+}
+main .appNav .brandName {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 2.4rem;
+  display: flex;
+  min-height: 4.8rem;
+}
+main .appNav .brandName a {
+  width: 225px;
+  text-decoration: none;
+  padding-top: 1.4rem;
+  padding-left: 2.5rem;
+  background: #4b5d6b;
+  color: #f1f4f5;
+}
+main .appNav .sideNavItem {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  min-height: 4.8rem;
+  line-height: 2.4rem;
+  border-bottom: 1px solid #f9f9f9;
+}
+main .appNav .sideNavItem i {
+  font-size: 1.8rem;
+  margin-right: 1.2rem;
+  align-content: center;
+  line-height: inherit;
+}
+main .appNav .sideNavItem a {
+  text-decoration: none;
+  line-height: inherit;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding-left: 2.4rem;
+  color: #6b7b8d;
+  display: flex;
+  align-items: center;
+  width: 225px;
+  transition: all 0.16s ease-out;
+}
+main .appNav .sideNavItem a:hover {
+  color: #4ECDC4;
+}
+main .appNav .activePage a {
+  color: #4ECDC4;
+  background: #fcfcfc;
+}
+main .appContent {
+  margin-top: 4.8rem;
+  margin-left: 225px;
+  width: 100%;
+  flex: 2;
+  display: flex;
+}
+main .appContent .pageSelector {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 2rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  line-height: 2rem;
+  width: 100%;
+  max-height: 3.36134rem;
+  background: #FFFFFF;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+}
+main .appContent .pageSelector .pageItem {
+  margin: 0;
+}
+main .appContent .pageSelector .pageItem:after {
+  content: "/\00a0";
+  padding: 0 0.6rem;
+  color: #d8dee4;
+}
+main .appContent .pageSelector .currentPage {
+  color: #7e93a5;
+}
+main .appContent .pageSelector .currentPage:after {
+  content: "";
+}
+main .appContent .pageSelector a {
+  text-decoration: none;
+  color: #4ECDC4;
+}
+main .appContent .pageSelector a:hover {
+  border-bottom: 1px solid #7e93a5;
+}

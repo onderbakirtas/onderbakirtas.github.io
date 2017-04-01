@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Yakında...</title>
+    <link rel="stylesheet" href="css/master.css" media="screen">
+    <link rel="stylesheet" href="css/normalize4.1.1.css" media="screen">
+  </head>
+  <body onload="sayac()">
+    <div class="container">
+      <div class="logo">
+        <img class="loggy" src="img/logo_new_small.png" alt="" />
+        <img class="texty" src="img/txt_only.png" alt="" />
+      </div>
+      <div class="wrapper">
+      <div class="welcome">
+        <p>
+          Çarkları hazırlıyoruz!
+        </p>
+      </div>
+        <div class="clock">
+          <div class="counter">
+          <div id="days"></div>
+            <span>GÜN</span>
+          </div>
+          <div class="counter">
+          <div id="hours"></div>
+            <span>SAAT</span>
+          </div>
+          <div class="counter">
+          <div id="minutes"></div>
+            <span>DAKİKA</span>
+          </div>
+          <div class="counter">
+          <div id="seconds"></div>
+            <span>SANİYE</span>
+          </div>
+        </div>
+        <script type="text/javascript">
+
+          function sayac() {
+            setInterval(countDown, 10);
+          }
+
+          function countDown() {
+              var launchDate = Date.parse("February 01 2017, 00:00");
+              var d = new Date();
+              var a = d.getTime();
+              var totalSeconds = parseInt((launchDate - a) / 1000);
+              var seconds = totalSeconds % 60;
+              var totalMinutes = (totalSeconds - seconds) / 60;
+              var minutes = totalMinutes % 60;
+              var totalHours = (totalMinutes / 60);
+              var hours = Math.floor(totalHours % 24);
+              var days = Math.floor(totalHours / 24);
+              var hrsNew = pad(hours);
+              var mnsNew = pad(minutes);
+              var scsNew = pad(seconds);
+              function pad(x) {
+                return (x < 10) ? ("0" + x) : x;
+              }
+              document.getElementById("seconds").innerHTML = scsNew;
+              document.getElementById("minutes").innerHTML = mnsNew;
+              document.getElementById("hours").innerHTML = hrsNew;
+              document.getElementById("days").innerHTML = days;
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

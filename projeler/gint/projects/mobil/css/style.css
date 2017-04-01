@@ -1,0 +1,55 @@
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+	height: 100%;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+body {
+	height: 640px;
+	width: 360px;
+	text-align:center;
+	margin:0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#site{
+	background:#5B7C8D;
+	height:100%;
+	width:100%;
+	margin: 0;
+	padding: 0;
+}
+#baslik{
+	width:100%;
+	font-size:20px;
+	color:#A6F6AF;
+}
+#menu{
+	width:100%;
+	font-size: 3.6rem;
+	color:#66B6AB;
+}
+#oyun{
+	width:100%;
+	font-size: 3.6rem;
+	color:#66B6AB;
+}
+#basla{
+	cursor:pointer;
+}
+#oy{
+	cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+

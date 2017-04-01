@@ -11,7 +11,7 @@
     </head>
     <body>
         <div class="wrapper">
-            <h2>Zeus Ult NOW!</h2>
+            <h2>ggVods.com</h2>
             <form action="success.html" method="post">
                 <div class="formGroup">
                     <label for="matchId">Match ID</label>
@@ -22,19 +22,25 @@
                     <input type="number" id="matchTime" name="matchTime" autocomplete="off" required>
                 </div>
                 <div class="formGroup">
+                    <label for="vodLength">Replay Length</label>
+                    <input type="number" id="vodLength" name="vodLength" autocomplete="off" required value="60">
+                </div>
+                <!-- 
+                <div class="formGroup">
                     <label>Follow Hero</label>
                     <div class="checkbox">
                         <input type="checkbox" id="followHero" name="followHero">
                         <label for="followHero" class="followHero"></label>
                     </div>
                 </div>
+                -->
                 <div id="heroPicker" class="formGroup">
                     <label for="heroName">Hero Name</label>
                     <input type="text" id="heroName" name="heroName" autocomplete="off">
                 </div>
                 <div class="formGroup">
-                    <button class="btn btnSend" type="submit"><span>Ultimate Ready</span></button>
-                    <button class="btn btnCancel" type="reset"><span>On Cooldown</span></button>
+                    <button class="btn btnSend" type="submit"><span>Create VOD</span></button>
+                    <button class="btn btnCancel" type="reset"><span>Refill Form</span></button>
                 </div>
             </form>
         </div>

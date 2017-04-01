@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Gudea:400,700|Passion+One&subset=latin-ext');
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&subset=latin-ext');
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:600|Open+Sans:300,400,700&subset=latin-ext');
+
+@import 'vars';
+
+h1,
+h2,
+h3 {
+  font-family: $header-font;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.8rem;
+}
+
+p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: darken($white, 20%)
+}
+
+.font-light {
+  font-weight: $font-weight-light;
+}
+
+.font-regular {
+  font-weight: $font-weight-regular;
+}
+
+.font-heavy {
+  font-weight: $font-weight-heavy;
+}
+
+// utility
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.hidden-sm {
+  display: none;
+}

@@ -1,0 +1,135 @@
+@import 'reset';
+@import 'grid';
+@import 'typography';
+
+body {
+  background: $blue;
+  color: $white;
+}
+
+.navbar {
+  background: darken(transparentize($dark-blue, 0.4), 3%);
+  position: fixed;
+  top: 0;
+  min-height: 50px;
+  width: 100%;
+  z-index: 1071;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  overflow: hidden;
+  .brand {
+    display: block;
+    margin-left: 30px;
+    height: 50px;
+    float: left;
+    padding: 5px 0;
+    img {
+      height: 40px;
+    }
+  }
+  .nav {
+    float: left;
+    height: 50px;
+    li {
+      float: left;
+      height: 100%;
+      margin-left: 30px;
+      a {
+        color: $white;
+        height: 50px;
+        display: block;
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+        padding: 1.7rem 0;
+        text-transform: uppercase;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          color: darken($white, 18%);
+        }
+      }
+    }
+  }
+}
+.landing {
+  height: 540px;
+  background: url('../img/bg.jpg') no-repeat $ldark-blue;
+  background-size: cover;
+  background-position: center center;
+  .landing-text {
+    .land-welcome {
+      padding-left: 16%;
+      padding-top: 200px;
+    }
+  }
+  .btn-group {
+    position: relative;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: center;
+    margin: 165px 0 0;
+  }
+  .btn {
+    display: inline-block;
+    width: 190px;
+    height: 40px;
+    border-width: 1px;
+    text-align: center;
+    border-style: solid;
+    border-color: darken($white, 36%);
+    padding: 11px 0;
+    margin-right: 20px;
+    color: darken($white, 10%);
+    transition: all 0.2s ease-in-out;
+    background-color: transparentize($white, 0.88);
+  }
+  .btn-discord {
+    &:hover {
+      background-color: $discord-color;
+      border-color: $discord-color;
+    }
+  }
+  .btn-steam {
+    &:hover {
+      background-color: $steam-color;
+      border-color: $steam-color;
+    }
+  }
+  .btn-youtube {
+    &:hover {
+      background-color: $youtube-color;
+      border-color: $youtube-color;
+    }
+  }
+}
+.intro {
+  background: darken(transparentize($blue, 0.4), 7%);
+  .feature {
+    min-height: 150px;
+  }
+  h2 {
+    padding-bottom: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

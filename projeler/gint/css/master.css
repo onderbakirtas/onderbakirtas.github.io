@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Klavika";
+  src: url(../fonts/KlavikaLight.otf);
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Klavika";
+  src: url(../fonts/KlavikaRegular.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Klavika";
+  src: url(../fonts/KlavikaMedium.otf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Klavika";
+  src: url(../fonts/KlavikaBold.otf);
+  font-weight: 800;
+}
+body {
+  background-color: #f7f7f7;
+}
+div.container {
+  width: 720px;
+  margin: 0 auto;
+}
+div.logo {
+  display: block;
+  width: 720px;
+  height: auto;
+  margin: 100px 0 20px;
+}
+img.loggy {
+  margin: 0 292px 10px;
+  height: 140px;
+  width: 140px;
+}
+img.texty {
+  margin: 10px 108px 0;
+  width: 528px;
+  height: 60px;
+}
+div.welcome > p {
+  font-family: "Klavika", sans-serif;
+  font-size: 36px;
+  line-height: 144px;
+  font-weight: 200;
+  color: #556270;
+  text-align: center;
+
+}
+div.wrapper {
+  width: 723px;
+  height: auto;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to top, #d9d9d9, rgba(0, 0, 0, 0)) 1 10%;
+  border-top: none;
+  padding: 0;
+  z-index: 9;
+  background: #f7f7f7;
+  background: -moz-linear-gradient(top,  #f7f7f7 0%, #ffffff 100%);
+  background: -webkit-linear-gradient(top,  #f7f7f7 0%,#ffffff 100%);
+  background: linear-gradient(to bottom,  #f7f7f7 0%,#ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#ffffff',GradientType=0 );
+
+}
+div.container::after {
+  content: " ";
+  z-index: -1;
+  position: relative;
+  display: block;
+  top: -200px;
+  left: 100px;
+  width: 525px;
+  height: 80px;
+  box-shadow: 0 100px 25px 40px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 100px 25px 40px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 90px 40px 50px rgba(0, 0, 0, 0.5);
+}
+div.clock {
+  width: 724px;
+  left: 0;
+  font-size: 0;
+}
+div.counter {
+  display: inline-block;
+  font-family: "Klavika";
+  text-align: center;
+  color: #556270;
+  width: 180px;
+  height: 120px;
+  border-right: 1px solid #e7e7e7;
+  border-top: 1px solid #e7e7e7;
+}
+div#hours, div#minutes, div#seconds, div#days {
+  font-size: 72px;
+  line-height: 72px;
+  font-weight: 800;
+  position: relative;
+  top: 18px;
+}
+div.counter > span {
+  position: relative;
+  top: 20px;
+  width: 200px;
+  font-size: 18px;
+  color: #4ECDC4;
+  line-height: 18px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
