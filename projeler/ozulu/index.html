@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Öz Ulu Çelik Kapı</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/ozulu.css"> </head>
+
+<body>
+  <div class="menu menu-fixed">
+    <div class="brand"> <img src="img/logo.png" alt="OzUluCelikKapi"> </div>
+    <nav class="main-menu">
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">PRODUCTS</a></li>
+        <li><a href="#">COMMERCIAL</a></li>
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"> <img src="img/slide-1.png" height="0" width="0" class="slideImage">
+        <section class="top">
+          <div class="box">
+            <div class="image"> <img src="img/secure.png"> </div>
+            <div class="title">Güvenliğe Kapınızı Açın</div>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec.</p>
+            </div>
+            <div class="link"> <a href="#">Tedbirler Neler</a> </div>
+          </div>
+        </section>
+      </div>
+      <div class="swiper-slide"> <img src="img/02.jpg" height="0" width="0" class="slideImage">
+        <section class="top">
+          <div class="box">
+            <div class="image"> <img src="img/healthy.png"> </div>
+            <div class="title">Sağlığınıza Değer Verin</div>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec.</p>
+            </div>
+            <div class="link"> <a href="#">Nasıl Üretildi</a> </div>
+          </div>
+        </section>
+      </div>
+      <div class="swiper-slide"> <img src="img/03.jpg" height="0" width="0" class="slideImage">
+        <section class="top">
+          <div class="box">
+            <div class="image"> <img src="img/cheap1.png"> </div>
+            <div class="title">Cüzdanınızın Kapısını Kapatın</div>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec.</p>
+            </div>
+            <div class="link"> <a href="#">Ne Kadar Öderim</a> </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="panels">
+    <div class="panel-container">
+      <img src="img/1.png" height="0" width="0" class="panel-background">
+      <h1>Urunlerin Ozellikleri</h1>
+    </div>
+    <div class="panel"></div>
+    <div class="panel"></div>
+    <div class="panel"></div>
+  </div> <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+    <!-- Slider Hack -->
+    <script>
+      
+      var a = document.getElementsByClassName('slideImage');
+      var b = document.getElementsByClassName('swiper-slide');
+      
+      var p = document.getElementsByClassName('panel-background');
+      var n = document.getElementsByClassName('panel-container');
+      
+      var t = a[0].getAttribute('src');
+      
+      
+      var g = t.toString();
+      var s = 'url(' + g + ')';
+      var c = b[0].style.backgroundImage = s;
+      var l = a.length;
+      var i;
+      for (i = 0; i < l; i++) {
+        var z = a[i].getAttribute('src');
+        var imgString = z.toString();
+        var imgLink = 'url(' + imgString + ')';
+        b[i].style.backgroundImage = imgLink;
+        console.log(imgLink);
+      }
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        autoplayDisableOnInteraction: false,
+          effect: 'fade',
+          autoplay: 4000,
+          loop: true,
+          speed: 600,
+        });
+    </script>
+</body>
+
+</html>

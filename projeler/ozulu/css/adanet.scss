@@ -1,0 +1,10 @@
+@mixin flex {
+  display: flex;
+  display: -ms-flexbox;
+  
+}
+body {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+}
